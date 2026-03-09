@@ -105,6 +105,12 @@ section > h5{
     width: 200px;
     height: 60px;
 }
+
+.button:hover{
+    background: linear-gradient(45deg,#00ff88,#00f7ff);
+    color: white;
+}
+
 .highlight{
     color: #00ff88;
 }
@@ -125,7 +131,23 @@ section > h5{
 section > aside > h1{
     margin-left: 190px;
     margin-top: 15px;
-    color: #06eff6;
+    background: linear-gradient(#06eff6, #61f80a);
     font-size: 70px;
-    font-family: 'Arial Rounded MT Bold', sans-serif;
+    font-family: "Bungee", sans-serif;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+section > aside:nth-child(2) > div{
+    width: 600px;
+    height: 400px;
+    background-color: #052068;
+    color: #f6f8f8;
+    box-shadow: 0 0 40px #89e3e6;
+    margin-left: 100px;
+    margin-bottom: 100px;
+    border-radius: 7%;
+    font-size: 30px;
+    text-align: center;
+
 }
