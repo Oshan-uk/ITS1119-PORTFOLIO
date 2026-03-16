@@ -6,8 +6,6 @@
 
 body{
     font-family: "Times New Roman", sans-serif;
-    background: #101f35;
-    color:white;
 }
 
 
@@ -21,7 +19,7 @@ nav{
     justify-content:space-between;
     align-items:center;
     padding:20px 80px;
-    background-color: #020d1f;
+    background-color: #010a22;
 }
 
 header > nav > div:nth-child(1){
@@ -44,4 +42,22 @@ header > nav > div:nth-child(1){
     text-decoration:none;
     color:white;
     font-size:16px;
+}
+
+
+
+
+.hero-section .hero-image{
+    width: 400px;
+    border: 2px solid blue;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-image: url("/assest/Profilepic.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    margin-left: 100px;
+    margin-top: 80px;
+
 }
