@@ -14,12 +14,88 @@ header{
     width:100%;
 }
 
+
+
+/* Navbar styling */
+nav {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #111;
+    color: #fff;
+}
+nav > div:nth-child(2) > a{
+    color: #32FF69;
+}
+
+
+.lines {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+
+.line::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -30%;
+    width: 30%;
+    height: 5px;
+    background: linear-gradient(
+            to right,
+            transparent,
+            #06eff6,
+            transparent
+    );
+    filter: blur(3px);
+    animation: slideRight 4s linear infinite;
+}
+
+
+.line:nth-child(1)::after { animation-delay: 0s; }
+.line:nth-child(2)::after { animation-delay: 0.5s; }
+.line:nth-child(3)::after { animation-delay: 4s; }
+
+
+@keyframes slideRight {
+    0% {
+        left: -30%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+
 nav{
+    height: 50px;
     display:flex;
     justify-content:space-between;
     align-items:center;
     padding:20px 80px;
-    background-color: #040E24;
+    background: linear-gradient(132deg, #150033, #000000);
+    background-size: 400% 400%;
+    animation: gradientNav 2s ease infinite alternate;
+}
+
+@keyframes gradientNav {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 header > nav > div:nth-child(1){
@@ -52,22 +128,39 @@ header > nav > div:nth-child(1){
     align-items: center;
     gap: 150px;
     padding: 80px;
-    background-color: #06041C;
 }
 
 .hero-section .hero-image{
     width: 1000px;
-    /*background: linear-gradient(45deg, purple, cyan);*/
 
-    border: 2px solid blue;
+
+    border: 2px solid #61f80a;
     aspect-ratio: 1/1;
     border-radius: 50%;
     background-image: url("/assest/Profilepic.jpeg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    box-shadow: 0 0 10px cyan, 0 0 20px #61f80a, 0 0 30px #06eff6;
+    animation: heroImageAnimation 2s infinite alternate;
+    transition:2s ;
 
 }
+.hero-image:hover{
+    background-image: url("/assest/profilepic2.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    opacity: 10;
+}
+
+
+@keyframes heroImageAnimation {
+    to{
+        box-shadow: 0 0 20px #240046, 0 0 30px #06eff6, 0 0 40px #240046;
+    }
+}
+
 
 .hero-content{
     color: white;
@@ -98,13 +191,21 @@ header > nav > div:nth-child(1){
     font-family: "Arial Black",sans-serif;
 }
 
+.hero-content p {
+    font-size: 20px;
+    max-width: 1400px;   /* adjust this value to match your name width */
+    line-height: 1.6;
+
+}
+
 
 .hero-content button{
     width: 120px;
     height: 30px;
     border-radius: 5px;
-    background: linear-gradient(to top right , blue,deepskyblue,blue,deepskyblue);
-    animation: buttonAnimation 2s infinite alternate;
+    background: cyan;
+    box-shadow: 0px 0px 10px cyan ;
+    border: none;
 
 }
 
@@ -112,13 +213,14 @@ header > nav > div:nth-child(1){
     width: 120px;
     height: 30px;
     border-radius: 5px;
-    background: linear-gradient(to top left , blue,deepskyblue,blue,deepskyblue);
-    animation: buttonAnimation 2s infinite alternate;
+    background: #32FF69;
+    box-shadow: 0px 0px 10px #32FF69 ;
+
 
 }
 
 .hero-content span {
-    animation: colorAnimation 2s infinite alternate;
+    animation: colorAnimation 1s infinite alternate;
     color:#00BFFFFF ;
 }
 
@@ -127,4 +229,106 @@ header > nav > div:nth-child(1){
     to{
         color: #32FF69;
     }
+}
+
+
+/*Background Animation*/
+@keyframes move {
+    100% {
+        transform: translate3d(0, 0, 1px) rotate(360deg);
+    }
+}
+
+.background {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: #06041C;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.ball {
+    position: absolute;
+    width: 20vmin;
+    height: 20vmin;
+    border-radius: 50%;
+    backface-visibility: hidden;
+    animation: move linear infinite;
+}
+
+.ball:nth-child(odd) {
+    color: #06eff6;
+}
+
+.ball:nth-child(even) {
+    color: #61f80a;
+}
+
+
+.ball:nth-child(1) {
+    top: 77%;
+    left: 88%;
+    animation-duration: 40s;
+    animation-delay: -3s;
+    transform-origin: 16vw -2vh;
+    box-shadow: 40vmin 0 5.703076368487546vmin currentColor;
+}
+.ball:nth-child(2) {
+    top: 42%;
+    left: 2%;
+    animation-duration: 53s;
+    animation-delay: -19s;
+    transform-origin: -19vw 21vh;
+    box-shadow: -40vmin 0 5.17594621519026vmin currentColor;
+}
+.ball:nth-child(3) {
+    top: 28%;
+    left: 18%;
+    animation-duration: 49s;
+    animation-delay: -3s;
+    transform-origin: -22vw 3vh;
+    box-shadow: 40vmin 0 5.248179047256236vmin currentColor;
+}
+.ball:nth-child(4) {
+    top: 50%;
+    left: 79%;
+    animation-duration: 26s;
+    animation-delay: -21s;
+    transform-origin: -17vw -6vh;
+    box-shadow: 40vmin 0 5.279749632220298vmin currentColor;
+}
+.ball:nth-child(5) {
+    top: 46%;
+    left: 15%;
+    animation-duration: 36s;
+    animation-delay: -40s;
+    transform-origin: 4vw 0vh;
+    box-shadow: -40vmin 0 5.964309466052033vmin currentColor;
+}
+.ball:nth-child(6) {
+    top: 77%;
+    left: 16%;
+    animation-duration: 31s;
+    animation-delay: -10s;
+    transform-origin: 18vw 4vh;
+    box-shadow: 40vmin 0 5.178483653434181vmin currentColor;
+}
+.ball:nth-child(7) {
+    top: 22%;
+    left: 17%;
+    animation-duration: 55s;
+    animation-delay: -6s;
+    transform-origin: 1vw -23vh;
+    box-shadow: -40vmin 0 5.703026794398318vmin currentColor;
+}
+.ball:nth-child(8) {
+    top: 41%;
+    left: 47%;
+    animation-duration: 43s;
+    animation-delay: -28s;
+    transform-origin: 25vw -3vh;
+    box-shadow: 40vmin 0 5.196265905749415vmin currentColor;
 }
