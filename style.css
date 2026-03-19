@@ -150,7 +150,7 @@ header > nav > div:nth-child(1){
 
 
 .hero-image:hover{
-    background-image: url("/assest/profilepic2.jpg");
+    background-image: url("assest/profilepic2.jpg");
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
