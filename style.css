@@ -75,7 +75,11 @@ nav > div:nth-child(2) > a{
 }
 
 
-nav{
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     height: 50px;
     display:flex;
     justify-content:space-between;
@@ -84,6 +88,7 @@ nav{
     background: linear-gradient(132deg, #150033, #000000);
     background-size: 400% 400%;
     animation: gradientNav 2s ease infinite alternate;
+    z-index: 1000;
 }
 
 @keyframes gradientNav {
