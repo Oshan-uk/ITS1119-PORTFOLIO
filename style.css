@@ -156,6 +156,7 @@ header > nav > div:nth-child(1){
 
 
 /*Hero section image change*/
+
 .hero-image:hover{
     background-image: url("assest/profilepic2.jpg");
     background-repeat: no-repeat;
@@ -256,6 +257,7 @@ header > nav > div:nth-child(1){
 
 
 /*Background Animation*/
+
 @keyframes move {
     100% {
         transform: translate3d(0, 0, 1px) rotate(360deg);
@@ -355,3 +357,30 @@ header > nav > div:nth-child(1){
     transform-origin: 25vw -3vh;
     box-shadow: 40vmin 0 5.196265905749415vmin currentColor;
 }
+
+
+
+/*About Me Section*/
+
+.about-section {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/*.about-content {*/
+/*    flex: 1;*/
+/*}*/
+
+
+/*.about-images {*/
+/*    width: 250px;*/
+/*    height: 350px;*/
+/*    border-radius: 25px;*/
+/*    background-size: cover;*/
+/*    background-position: center;*/
+/*    position: absolute;*/
+/*    box-shadow: 0 0 20px cyan, 0 0 40px #32FF69;*/
+/*}*/
