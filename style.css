@@ -137,10 +137,9 @@ header > nav > div:nth-child(1){
 
 
 
-/*Hero section image change*/
 .hero-section .hero-image{
     width: 1000px;
-
+    margin-top: 40px;
 
     border: 2px solid #61f80a;
     aspect-ratio: 1/1;
@@ -156,7 +155,7 @@ header > nav > div:nth-child(1){
 }
 
 
-
+/*Hero section image change*/
 .hero-image:hover{
     background-image: url("assest/profilepic2.jpg");
     background-repeat: no-repeat;
@@ -175,6 +174,7 @@ header > nav > div:nth-child(1){
 
 .hero-content{
     color: white;
+    margin-top: 30px;
 }
 
 .hero-content h3 {
