@@ -138,7 +138,8 @@ header > nav > div:nth-child(1){
 
 
 .hero-section .hero-image{
-    width: 1000px;
+    width: 350px;   /* instead of 1000px */
+    max-width: 100%;
     margin-top: 40px;
 
     border: 2px solid #61f80a;
@@ -361,26 +362,87 @@ header > nav > div:nth-child(1){
 
 
 /*About Me Section*/
-
 .about-section {
-    width: 100%;
+    position: relative;
+    width: 600px;
+    height: 500px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 100px;
+    margin-left: 100px;
+
+    padding: 20px;
+    border-radius: 16px;
+    background: #111; /* or your background */
+    z-index: 1;
+}
+
+/* 🔥 Glow border */
+.about-section::before {
+    content: "";
+    position: absolute;
+    inset: -2px; /* border thickness */
+    border-radius: 16px;
+    z-index: -1;
+    animation: glowMove 3s linear infinite;
+    background-size: 200%;
+
+    background: linear-gradient(
+            120deg,
+            transparent,
+            var(--electric-border-color, #dd8448),
+            transparent
+    );
+
+    filter: blur(8px);
+    opacity: 0.8;
 }
 
 
-/*.about-content {*/
-/*    flex: 1;*/
-/*}*/
+@keyframes glowMove {
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: 200%;
+    }
+}
 
 
-/*.about-images {*/
-/*    width: 250px;*/
-/*    height: 350px;*/
-/*    border-radius: 25px;*/
-/*    background-size: cover;*/
-/*    background-position: center;*/
-/*    position: absolute;*/
-/*    box-shadow: 0 0 20px cyan, 0 0 40px #32FF69;*/
-/*}*/
+
+@media (max-width: 768px) {
+
+    .hero-section {
+        flex-direction: column;   /* 🔥 stack layout */
+        text-align: center;
+        gap: 40px;
+        padding: 40px 20px;
+    }
+
+    .hero-image {
+        width: 250px;
+        margin-top: 80px; /* space for fixed navbar */
+    }
+
+    .hero-content h1 {
+        font-size: 32px;
+    }
+
+    .hero-content h3 {
+        font-size: 20px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+        max-width: 100%;
+    }
+
+    nav {
+        padding: 10px 20px;
+    }
+
+    .navigations {
+        display: none; /* simple mobile fix (later we add menu) */
+    }
+}
