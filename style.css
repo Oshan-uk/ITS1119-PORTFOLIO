@@ -108,7 +108,7 @@ header > nav > div:nth-child(1){
     width: 70px;
     height: 40px;
     object-fit: contain;
-    background-image: url("/assest/portfolioLogo.png");
+    background-image: url("assest/portfolioLogo.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
