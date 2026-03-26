@@ -204,18 +204,32 @@ header > nav > div:nth-child(1){
     font-family: "Arial Black",sans-serif;
 }
 
+h3 span {
+    position: relative;
+    top: 7px; /* move it down */
+}
+/*Typing animation*/
 .hero-content span {
-    animation: colorAnimation 1s infinite alternate;
-    color:#00BFFFFF ;
+    display: inline-block;
+    color: #32FF69;
+    letter-spacing: 3px;
+    border-right: 3px solid cyan;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    animation:
+            typing 4s steps(22) forwards,
+            cursor 0.4s step-end infinite alternate;
 }
 
-
-@keyframes colorAnimation {
-    to{
-        color: #32FF69;
-    }
+@keyframes typing {
+    from { width: 0ch; }
+    to { width: 21ch; }
 }
 
+@keyframes cursor {
+    50% { border-color: transparent; }
+}
 
 .hero-content p {
     font-size: 20px;
@@ -361,68 +375,122 @@ header > nav > div:nth-child(1){
 
 
 
-/*About Me Section*/
-.about-section {
-    position: relative;
-    width: 600px;
-    height: 500px;
+
+/* About Section */
+.about {
     display: flex;
+    align-items: flex-start;
     justify-content: space-between;
-    align-items: center;
-    margin-top: 100px;
-    margin-left: 100px;
-
-    padding: 20px;
-    border-radius: 16px;
-    background: #111; /* or your background */
-    z-index: 1;
+    gap: 80px;
+    padding: 20px 80px;
+    color: #06041C;
 }
 
-/* 🔥 Glow border */
-.about-section::before {
-    content: "";
-    position: absolute;
-    inset: -2px; /* border thickness */
-    border-radius: 16px;
-    z-index: -1;
-    animation: glowMove 3s linear infinite;
-    background-size: 200%;
-
-    background: linear-gradient(
-            120deg,
-            transparent,
-            var(--electric-border-color, #dd8448),
-            transparent
-    );
-
-    filter: blur(8px);
-    opacity: 0.8;
+section {
+    scroll-margin-top: 80px;
+}
+.about-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
+/* LEFT SIDE (text container) */
+.about-topic {
+    font-size: 50px;
+    font-weight: bold;
+    color: #32FF69;
+    margin-bottom: 10px;
+    padding-bottom: 30px;
+    text-shadow: 1px 1px 5px #8fd3d3;
+}
 
-@keyframes glowMove {
+/* Wrap text nicely */
+.about-content {
+    max-width: 500px;
+    height: 400px;
+    font-size: 18px;
+    line-height: 1.6;
+    background: #8fd3d3;
+    color: black;
+    padding: 25px;
+    border-radius: 25px;
+    opacity: 0.85;
+    margin-bottom: 40px;
+}
+
+.about-content::first-letter {
+    font-size: 55px;
+    font-weight: bold;
+    float: left;
+    line-height: 1;
+    margin-right: 10px;
+    color: #06041C;
+}
+
+/* IMAGE SIDE */
+.about-image img {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 25px;
+    box-shadow: 0 0 20px cyan, 0 0 40px #32FF69;
+    margin-right: 50px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    perspective: 1000px;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    animation: glowPulse 2s infinite alternate,float 4s ease-in-out infinite;
+    animation-delay:2s;
+    margin-top: 50px;
+
+}
+
+@keyframes glowPulse {
+    from {
+        box-shadow: 0 0 10px cyan;
+    }
+    to {
+        box-shadow: 0 0 50px #32FF69;
+    }
+}
+
+@keyframes float {
     0% {
-        background-position: 0%;
+        transform: translate(0, 0);
+    }
+    25% {
+        transform: translate(40px, -40px);
+    }
+    50% {
+        transform: translate(0, 0);
+    }
+    75% {
+        transform: translate(-40px, 40px);
     }
     100% {
-        background-position: 200%;
+        transform: translate(0, 0);
     }
 }
 
 
 
+
+/*Media Query*/
 @media (max-width: 768px) {
 
     .hero-section {
-        flex-direction: column;   /* 🔥 stack layout */
+        flex-direction: column;
         text-align: center;
         gap: 40px;
         padding: 40px 20px;
     }
 
     .hero-image {
-        width: 250px;
-        margin-top: 80px; /* space for fixed navbar */
+        width: 200px;
+        margin-top: 80px;
     }
 
     .hero-content h1 {
@@ -443,6 +511,6 @@ header > nav > div:nth-child(1){
     }
 
     .navigations {
-        display: none; /* simple mobile fix (later we add menu) */
+        display: none;
     }
 }
