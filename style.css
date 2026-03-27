@@ -501,6 +501,7 @@ section {
 
     /* NAVBAR */
     nav {
+        position: fixed;
         padding: 10px 20px;
         height: auto;
     }
