@@ -212,19 +212,22 @@ h3 span {
 .hero-content span {
     display: inline-block;
     color: #32FF69;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     border-right: 3px solid cyan;
+
     white-space: nowrap;
     overflow: hidden;
-    width: 0;
-    animation:
-            typing 4s steps(22)  2s infinite,
-            cursor 0.4s step-end infinite alternate;
+    max-width: 70%;
+
+    animation: typing 6s steps(22) infinite,
+    cursor 0.4s step-end infinite;
 }
 
 @keyframes typing {
-    from { width: 0ch; }
-    to { width: 22ch; }
+    0% { width: 0; }
+    60% { width: 100%; }   /* type */
+    85% { width: 100%; }   /* delay */
+    100% { width: 0; }     /* reset */
 }
 
 @keyframes cursor {
@@ -506,13 +509,16 @@ section {
         height: auto;
     }
 
-    h3  {
+    .hero-content h3:nth-of-type(2) {
         white-space: nowrap;
-
+        overflow: hidden;
     }
-     h3 span{
-         width: 18ch;
-     }
+
+    .hero-content h3:nth-of-type(2) span {
+        display: inline-block;
+        max-width: 100%;
+    }
+
     .navigations {
         display: none;
     }
