@@ -554,10 +554,10 @@ section {
         line-height: 1.5;
     }
 
-    /* FIX TYPING ANIMATION WIDTH */
     .hero-content span {
         font-size: 16px;
         letter-spacing: 1px;
+        animation: typing 6s steps(18) infinite, cursor 0.4s step-end infinite;
     }
 
     /* ABOUT SECTION */
