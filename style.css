@@ -506,6 +506,11 @@ section {
         height: auto;
     }
 
+    h3 span {
+        position: relative;
+        top: 7px; /* move it down */
+    }
+
     .navigations {
         display: none;
     }
