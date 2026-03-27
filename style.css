@@ -508,7 +508,7 @@ section {
 
     h3 span {
         position: relative;
-        top: 7px; /* move it down */
+        top: 50px; /* move it down */
     }
 
     .navigations {
