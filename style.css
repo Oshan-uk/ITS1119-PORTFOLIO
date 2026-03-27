@@ -479,12 +479,208 @@ section {
 }
 
 
+/*Skills Section*/
+#skills {
+    padding: 50px 20px;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    height: 100vh;
+    width: 100%;
+}
+
+.technical-skills-title{
+    font-size: 40px;
+    font-family: "Times New Roman", sans-serif;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 10px #32FF69;
+     margin-top: -30px;
+}
+.soft-skills-title {
+    font-size: 40px;
+    font-family: "Times New Roman", sans-serif;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 10px #06eff6;
+
+}
+
+.technical-skills-title {
+    color:#06eff6 ;
+}
+
+.soft-skills-title {
+    color: #32FF69;
+}
+
+.skills-animation {
+    overflow: visible;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    width: 100%;
+}
+
+
+.skill-logo img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    border-radius: 20px;
+    background: linear-gradient(45deg, #32FF69, #06eff6, #ff00ff);
+    border-top: 5px solid #06eff6;
+    border-bottom:5px solid  #32FF69;
+    border-left:5px solid  #06eff6;
+    border-right:5px solid  #32FF69;
+    box-shadow:
+            0 0 10px #32FF69,
+            0 0 20px #06eff6,
+            0 0 30px #ff00ff;
+    transition: transform 0.3s, box-shadow 0.3s;
+
+}
+
+.skill-logo img:hover {
+    transform: scale(1.2);
+    box-shadow:
+            0 8px 10px rgba(50,255,105,0.8),
+            0 -8px 10px rgba(50,255,105,0.8),
+            8px 0 10px rgba(50,255,105,0.8),
+            -8px 0 10px rgba(50,255,105,0.8),
+            0 0 40px rgba(6,239,246,0.8);
+}
+
+/*.right-to-left {*/
+/*    animation: scrollRightToLeft 15s linear infinite;*/
+/*}*/
+
+/*@keyframes scrollRightToLeft {*/
+/*    0% { transform: translateX(100%); }*/
+/*    100% { transform: translateX(-100%); }*/
+/*}*/
+
+.soft-skill {
+    font-size: 22px;
+    padding: 10px 20px;
+    background: linear-gradient(45deg, #32FF69, #06eff6, #ff00ff);
+    opacity: 0.8;
+    color: #111;
+    border-radius: 20px;
+    display: inline-block;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+/*.left-to-right {*/
+/*    animation: scrollLeftToRight 20s linear infinite;*/
+/*}*/
+
+/*@keyframes scrollLeftToRight {*/
+/*    0% { transform: translateX(-100%); }*/
+/*    100% { transform: translateX(100%); }*/
+/*}*/
+
+/* Projects Section */
+#projects {
+    width: 100%;
+    height: 100vh;
+    padding: 100px 50px;
+    color: white;
+    text-align: center;
+}
+
+.projects-title {
+    font-size: 40px;
+    font-family: "Times New Roman", serif;
+    margin-bottom: 60px;
+    color: #32FF69;
+    text-shadow: 1px 1px 10px #06eff6;
+    margin-top: -100px;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+
+.project-card {
+    background: #111;
+    border-radius: 20px;
+    border: 5px solid cyan;
+    padding: 20px;
+    width: 300px;
+
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 10px 25px rgba(50,255,105,0.8),
+    0 -10px 25px rgba(50,255,105,0.8),
+    10px 0 25px rgba(50,255,105,0.8),
+    -10px 0 25px rgba(50,255,105,0.8),
+    0 0 40px rgba(6,239,246,0.8);
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.project-name {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #32FF69;
+}
+
+.project-description {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #ccc;
+}
+
+/* GitHub Button for Project Card */
+.projects-btn {
+    margin-top: 30px;
+    padding: 10px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background: blue;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 0 10px #32FF69, 0 0 20px #06eff6;
+    transition: 0.3s;
+}
+
+.projects-btn:hover {
+    background: #06eff6;
+    color: black;
+    box-shadow: 0 0 15px purple, 0 0 25px blue;
+    transform: scale(1.05);
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*Media Query*/
 @media (max-width: 480px) {
-
-
 
     .background {
         position: fixed;
