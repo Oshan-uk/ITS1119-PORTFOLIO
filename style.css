@@ -80,11 +80,11 @@ nav {
     top: 0;
     left: 0;
     width: 100%;
-    height: 50px;
+    height: auto;
+    padding: 10px 20px;
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:20px 80px;
     background: linear-gradient(132deg, #150033, #000000);
     background-size: 400% 400%;
     animation: gradientNav 2s ease infinite alternate;
@@ -479,7 +479,7 @@ section {
 
 
 /*Media Query*/
-@media (max-width: 430px) {
+@media (max-width: 480px) {
 
 
 
