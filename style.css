@@ -506,11 +506,13 @@ section {
         height: auto;
     }
 
-    h3 span {
-        position: relative;
-        top: 50px; /* move it down */
-    }
+    h3  {
+        white-space: nowrap;
 
+    }
+     h3 span{
+         width: 18ch;
+     }
     .navigations {
         display: none;
     }
@@ -579,9 +581,9 @@ section {
         margin: 0;
     }
 
-    /* BACKGROUND BALLS (OPTIONAL PERFORMANCE FIX) */
+
     .ball {
-        width: 10vmin;
-        height: 10vmin;
+        width: 15vmin;
+        height:20vmin;
     }
 }
