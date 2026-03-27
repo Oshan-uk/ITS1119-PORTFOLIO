@@ -614,7 +614,7 @@ section {
     border: 5px solid cyan;
     padding: 20px;
     width: 300px;
-
+    margin-top: -45px;
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
