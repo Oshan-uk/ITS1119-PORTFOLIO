@@ -556,8 +556,9 @@ section {
 
     .hero-content span {
         font-size: 16px;
+        max-width: 20%;
         letter-spacing: 1px;
-        animation: typing 6s steps(18) infinite, cursor 0.4s step-end infinite;
+        animation: typing 6s steps(10) infinite, cursor 0.4s step-end infinite;
     }
 
     /* ABOUT SECTION */
