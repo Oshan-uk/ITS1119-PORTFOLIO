@@ -224,7 +224,7 @@ h3 span {
 
 @keyframes typing {
     from { width: 0ch; }
-    to { width: 23ch; }
+    to { width: 22ch; }
 }
 
 @keyframes cursor {
