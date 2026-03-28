@@ -981,7 +981,7 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    bottom: 0;
     width: 100%;
     height: 100px;
 
@@ -1002,18 +1002,20 @@ section {
     width: 45px;
     height: 45px;
 
-    background: #111;
+    background: cyan;
     border-radius: 50%;
 
     box-shadow: 0 0 10px #32FF69;
     transition: 0.3s;
+    margin-right: 10px;
 }
 
 .bottom-left {
     display: flex;
+    font-size: 20px;
     flex-direction: column;
     gap: 5px;
-    color: #ccc;
+    color: grey;
 }
 
 .bottom-right a img {
