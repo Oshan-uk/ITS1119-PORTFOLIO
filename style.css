@@ -908,16 +908,16 @@ section {
 /* Contact Section */
 #contact {
     padding: 100px 50px;
-    background: #06041C;
     color: white;
 }
 
 .contact-title {
     text-align: center;
-    font-size: 40px;
+    font-size: 50px;
     color: #32FF69;
     margin-bottom: 50px;
     text-shadow: 1px 1px 10px #06eff6;
+    margin-top: -80px;
 }
 
 .contact-container {
@@ -928,6 +928,7 @@ section {
 }
 
 .contact-left p {
+    font-size: 30px;
     margin-bottom: 15px;
     color: #ccc;
 }
@@ -969,6 +970,7 @@ section {
 .contact-bottom {
     display: flex;
     justify-content: space-between;
+    background-color: black;
     align-items: center;
     border-top: 1px solid #32FF69;
     padding-top: 20px;
