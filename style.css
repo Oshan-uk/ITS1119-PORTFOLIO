@@ -140,38 +140,39 @@ header > nav > div:nth-child(1){
 
 
 
-.hero-section .hero-image{
-    width: 1000px;   /* instead of 1000px */
+.hero-section .hero-image {
+    width: 1000px;
     max-width: 100%;
     margin-top: 40px;
 
     border: 2px solid #61f80a;
     aspect-ratio: 1/1;
     border-radius: 50%;
-    background-image: url("assest/Profilepic.jpeg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     box-shadow: 0 0 10px cyan, 0 0 20px #61f80a, 0 0 30px #06eff6;
-    animation: heroImageAnimation 2s infinite alternate;
-    transition:2s ;
 
+    animation: switchHero 20s steps(1) infinite alternate;
+    transition: 5s;
+    opacity: 0.9;
 }
 
+/* Keyframes for switching images every 5 seconds */
+@keyframes switchHero {
+    0%, 49.99% {
+        background-image: url("assest/Profilepic.jpeg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        box-shadow: 0 0 10px cyan, 0 0 20px #61f80a, 0 0 30px #06eff6;
 
-/*Hero section image change*/
-
-.hero-image:hover{
-    background-image: url("assest/profilepic2.jpg");
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: cover;
-    opacity: 10;
-}
-
-
-@keyframes heroImageAnimation {
-    to{
+    }
+    50%, 100% {
+        background-image: url("assest/profilepic2.jpg");
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: cover;
         box-shadow: 0 0 20px #240046, 0 0 30px #06eff6, 0 0 40px #240046;
     }
 }
