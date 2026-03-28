@@ -833,7 +833,7 @@ section {
     font-size: 50px;
     font-family: "Times New Roman", serif;
     margin-bottom: 60px;
-    color: #32FF69;
+    color: #06eff6;
     text-shadow: 1px 1px 10px #06eff6;
     margin-top: -100px;
     text-align: center;
@@ -880,24 +880,129 @@ section {
 }
 
 .item-1 {
-    background-image: url('https://images.unsplash.com/photo-1499198116522-4a6235013d63');
+    background-image: url(assest/Gallery7.jpeg);
 }
 
 .item-2 {
-    background-image: url('https://images.unsplash.com/photo-1492760864391-753aaae87234');
+    background-image: url(assest/Gallery1.jpg);
 }
 
 .item-3 {
-    background-image: url('https://images.unsplash.com/photo-1503631285924-e1544dce8b28');
+    background-image: url(assest/Gallery3.jpeg);
 }
 
 .item-4 {
-    background-image: url('https://images.unsplash.com/photo-1510425463958-dcced28da480');
+    background-image: url(assest/Gallery4.jpg);
 }
 
 .item-5 {
-    background-image: url('https://images.unsplash.com/photo-1503602642458-232111445657');
+    background-image: url(assest/Gallery5.jpg);
 }
+
+
+
+
+
+
+
+/* Contact Section */
+#contact {
+    padding: 100px 50px;
+    background: #06041C;
+    color: white;
+}
+
+.contact-title {
+    text-align: center;
+    font-size: 40px;
+    color: #32FF69;
+    margin-bottom: 50px;
+    text-shadow: 1px 1px 10px #06eff6;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+
+.contact-left p {
+    margin-bottom: 15px;
+    color: #ccc;
+}
+
+.contact-right form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-right input,
+.contact-right textarea {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background: #111;
+    color: white;
+    box-shadow: 0 0 5px #32FF69;
+}
+
+.contact-right button {
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background: #32FF69;
+    color: #111;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 0 10px #32FF69, 0 0 20px #06eff6;
+    transition: 0.3s;
+}
+
+.contact-right button:hover {
+    background: #06eff6;
+    color: white;
+}
+
+.contact-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #32FF69;
+    padding-top: 20px;
+}
+
+.bottom-right a img {
+    width: 30px;
+    margin-left: 15px;
+    transition: 0.3s;
+}
+
+.bottom-right a img:hover {
+    transform: scale(1.2);
+    filter: drop-shadow(0 0 10px #32FF69);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .contact-bottom {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+}
+
+
+
+
+
+
 
 
 
