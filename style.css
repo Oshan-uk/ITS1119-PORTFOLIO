@@ -907,7 +907,8 @@ section {
 
 /* Contact Section */
 #contact {
-    padding: 100px 50px;
+    width: 100%;
+    height: 90vh;
     color: white;
 }
 
@@ -928,16 +929,25 @@ section {
 }
 
 .contact-left p {
-    font-size: 30px;
+    font-size: 20px;
     margin-bottom: 15px;
     color: #ccc;
+    padding-left: 40px;
 }
 
 .contact-right form {
     display: flex;
     flex-direction: column;
     gap: 15px;
+    width: 600px;
+    opacity: 0.8;
+    padding-right: 40px;
+
 }
+.contact-right form button {
+   border: 1px solid blue;
+}
+
 
 .contact-right input,
 .contact-right textarea {
@@ -946,7 +956,7 @@ section {
     border: none;
     outline: none;
     background: #111;
-    color: white;
+    color: cyan;
     box-shadow: 0 0 5px #32FF69;
 }
 
@@ -964,21 +974,50 @@ section {
 
 .contact-right button:hover {
     background: #06eff6;
-    color: white;
+    color: blue;
 }
 
 .contact-bottom {
     display: flex;
     justify-content: space-between;
-    background-color: black;
     align-items: center;
-    border-top: 1px solid #32FF69;
-    padding-top: 20px;
+
+    width: 100%;
+    height: 100px;
+
+    background: black;
+    padding: 0 50px;
+}
+.bottom-right {
+    display: flex;          /* THIS is the main fix */
+    align-items: center;
+    gap: 15px;
+}
+
+.bottom-right div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 45px;
+    height: 45px;
+
+    background: #111;
+    border-radius: 50%;
+
+    box-shadow: 0 0 10px #32FF69;
+    transition: 0.3s;
+}
+
+.bottom-left {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: #ccc;
 }
 
 .bottom-right a img {
-    width: 30px;
-    margin-left: 15px;
+    width: 35px;
     transition: 0.3s;
 }
 
@@ -987,18 +1026,7 @@ section {
     filter: drop-shadow(0 0 10px #32FF69);
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-    .contact-container {
-        flex-direction: column;
-    }
 
-    .contact-bottom {
-        flex-direction: column;
-        gap: 20px;
-        text-align: center;
-    }
-}
 
 
 
