@@ -161,13 +161,13 @@ header > nav > div:nth-child(1){
     opacity: 0.9;
 }
 
-/* Keyframes for switching images every 5 seconds */
 @keyframes switchHero {
     0%, 49.99% {
         background-image: url("assest/Profilepic.jpeg");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
+        transition: 1s;
         box-shadow: 0 0 10px cyan, 0 0 20px #61f80a, 0 0 30px #06eff6;
 
     }
@@ -176,6 +176,7 @@ header > nav > div:nth-child(1){
         background-repeat: no-repeat;
         background-position: top;
         background-size: cover;
+        transition: 1s;
         box-shadow: 0 0 20px #240046, 0 0 30px #06eff6, 0 0 40px #240046;
     }
 }
@@ -904,7 +905,7 @@ section {
 }
 
 .item-5 {
-    background-image: url(assest/Gallery5.jpg);
+    background-image: url(assest/Gallery8.jpg);
 }
 
 
