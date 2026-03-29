@@ -8,6 +8,9 @@ body{
     font-family: "Times New Roman", sans-serif;
 }
 
+button{
+    cursor: pointer;
+}
 
 
 header{
@@ -948,8 +951,8 @@ section {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    width: 100%;
-    max-width: 600px;
+    width: 1000px;
+    max-width: 1200px;
     opacity: 0.8;
     padding-right: 40px;
 
@@ -988,6 +991,68 @@ section {
     color: blue;
 }
 
+
+
+/*QR Code*/
+.qr-container {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    transform: translateY(150px);
+    z-index: 1000;
+}
+
+#qr-toggle {
+    display: none;
+}
+
+.qr-btn {
+    width: 50px;
+    height: 50px;
+    background: #32FF69;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20%;
+    cursor: pointer;
+    box-shadow: 0 0 10px #32FF69, 0 0 20px #06eff6;
+}
+
+
+
+.qr-btn i {
+    font-size: 22px;
+    color: black;
+}
+
+.qr-box {
+    opacity: 0;
+    transform: translateY(0px);
+    pointer-events: none;
+    transition: 0.3s;
+
+    background: #111;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+#qr-toggle:checked ~ .qr-box {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+.qr-box img {
+    width: 150px;
+}
+
+
+
+
+
+
+
+/*Footer*/
 .footer {
     display: flex;
     justify-content: space-between;
