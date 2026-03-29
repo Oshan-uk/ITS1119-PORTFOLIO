@@ -155,31 +155,39 @@ header > nav > div:nth-child(1){
     background-position: center;
     background-size: cover;
     box-shadow: 0 0 10px cyan, 0 0 20px #61f80a, 0 0 30px #06eff6;
+    background-image: url("assest/Profilepic.jpeg");
 
-    animation: switchHero 20s steps(1) infinite alternate;
-    transition: 5s;
-    opacity: 0.9;
+    transition: transform 1s, background-image 0.5s, box-shadow 1s; /* smooth rotate + image + shadow */
 }
 
-@keyframes switchHero {
-    0%, 49.99% {
-        background-image: url("assest/Profilepic.jpeg");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        transition: 1s;
-        box-shadow: 0 0 10px cyan, 0 0 20px #61f80a, 0 0 30px #06eff6;
-
-    }
-    50%, 100% {
-        background-image: url("assest/profilepic2.jpg");
-        background-repeat: no-repeat;
-        background-position: top;
-        background-size: cover;
-        transition: 1s;
-        box-shadow: 0 0 20px #240046, 0 0 30px #06eff6, 0 0 40px #240046;
-    }
+/* Hover: rotate and change image */
+.hero-section .hero-image:active {
+    transform: rotateY(360deg); /* rotates fully */
+    background-image: url("assest/profilepic2.jpg");
+    background-position: top;
+    background-size: cover;
+    box-shadow: 0 0 20px #240046, 0 0 30px #06eff6, 0 0 40px #240046;
 }
+
+/*@keyframes switchHero {*/
+/*    0%, 49.99% {*/
+/*        background-image: url("assest/Profilepic.jpeg");*/
+/*        background-repeat: no-repeat;*/
+/*        background-position: center;*/
+/*        background-size: cover;*/
+/*        transition: 1s;*/
+/*        box-shadow: 0 0 10px cyan, 0 0 20px #61f80a, 0 0 30px #06eff6;*/
+
+/*    }*/
+/*    50%, 100% {*/
+/*        background-image: url("assest/profilepic2.jpg");*/
+/*        background-repeat: no-repeat;*/
+/*        background-position: top;*/
+/*        background-size: cover;*/
+/*        transition: 1s;*/
+/*        box-shadow: 0 0 20px #240046, 0 0 30px #06eff6, 0 0 40px #240046;*/
+/*    }*/
+/*}*/
 
 
 .hero-content{
@@ -939,6 +947,9 @@ section {
 
 .info {
     text-align: center;
+}
+.info p:hover{
+    color: blue;
 }
 
 .info p {
