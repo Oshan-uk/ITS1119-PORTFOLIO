@@ -928,34 +928,40 @@ section {
 
 .contact-container {
     display: flex;
-    justify-content: space-between;
-    gap: 50px;
-    margin-bottom: 50px;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
 }
 
-.contact-left p {
+.info {
+    text-align: center;
+}
+
+.info p {
     font-size: 20px;
     margin-bottom: 15px;
     color: #ccc;
     padding-left: 40px;
 }
 
-.contact-right form {
+.fields form {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    width: 600px;
+    width: 100%;
+    max-width: 600px;
     opacity: 0.8;
     padding-right: 40px;
 
 }
-.contact-right form button {
-   border: 1px solid blue;
+.fields form button {
+    width: 180px;
+    border: 1px solid blue;
 }
 
 
-.contact-right input,
-.contact-right textarea {
+.fields input,
+.fields textarea {
     padding: 10px;
     border-radius: 10px;
     border: none;
@@ -965,7 +971,7 @@ section {
     box-shadow: 0 0 5px #32FF69;
 }
 
-.contact-right button {
+.fields button {
     padding: 12px;
     border: none;
     border-radius: 10px;
@@ -977,12 +983,12 @@ section {
     transition: 0.3s;
 }
 
-.contact-right button:hover {
+.fields button:hover {
     background: #06eff6;
     color: blue;
 }
 
-.contact-bottom {
+.footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -994,13 +1000,13 @@ section {
     padding: 0 50px;
     margin-top: 70px;
 }
-.bottom-right {
-    display: flex;          /* THIS is the main fix */
+.footer-right {
+    display: flex;
     align-items: center;
     gap: 15px;
 }
 
-.bottom-right div {
+.footer-right div {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1016,7 +1022,7 @@ section {
     margin-right: 10px;
 }
 
-.bottom-left {
+.footer-left {
     display: flex;
     font-size: 20px;
     flex-direction: column;
@@ -1024,19 +1030,19 @@ section {
     color: grey;
 }
 
-.bottom-right a img {
+.footer-right a img {
     width: 35px;
     transition: 0.3s;
 }
 
-.bottom-right a img:hover {
+.footer-right a img:hover {
     transform: scale(1.2);
     filter: drop-shadow(0 0 10px #32FF69);
 }
 
 
 /* Bottom-center */
-.bottom-center {
+.footer-center {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -1044,7 +1050,7 @@ section {
     margin-top: 70px;
 }
 
-.bottom-center p {
+.footer-center p {
     color: #32FF69;
     font-family: "Times New Roman", serif;
     font-size: 16px;
