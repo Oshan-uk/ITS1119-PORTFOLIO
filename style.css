@@ -998,7 +998,7 @@ section {
     position: fixed;
     bottom: 20px;
     left: 20px;
-    transform: translateY(150px);
+    transform: translateY(160px);
     z-index: 1000;
 }
 
@@ -1015,6 +1015,7 @@ section {
     justify-content: center;
     border-radius: 20%;
     cursor: pointer;
+    transform: translateY(360px);
     box-shadow: 0 0 10px #32FF69, 0 0 20px #06eff6;
 }
 
@@ -1027,24 +1028,23 @@ section {
 
 .qr-box {
     opacity: 0;
-    transform: translateY(0px);
     pointer-events: none;
     transition: 0.3s;
 
-    background: #111;
+    background:white;
     padding: 10px;
     border-radius: 15px;
 }
 
-#qr-toggle:checked ~ .qr-box {
-    opacity: 1;
-    transform: translateY(0);
-    pointer-events: auto;
-}
+/*#qr-toggle:checked ~ .qr-box {*/
+/*    opacity: 1;*/
+/*    transform: translateY(0);*/
+/*    pointer-events: auto;*/
+/*}*/
 
-.qr-box img {
-    width: 150px;
-}
+/*.qr-box img {*/
+/*    width: 150px;*/
+/*}*/
 
 
 
