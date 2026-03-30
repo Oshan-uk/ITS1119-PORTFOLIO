@@ -503,15 +503,24 @@ section {
     overflow: visible;
     white-space: nowrap;
     display: flex;
-    align-items: center;
+    justify-content: center;
     gap: 80px;
     width: 100%;
+    cursor: pointer;
 }
+
+.skills-animation > span:hover{
+    transition: 1s;
+    box-shadow: 0px 0px 20px #06eff6;
+    scale: 1.2;
+}
+
 
 
 .skill-logo img {
     width: 100px;
     height: 100px;
+    align-items: center;
     object-fit: contain;
     border-radius: 20px;
     background: linear-gradient(45deg, #32FF69, #06eff6, #ff00ff);
@@ -527,7 +536,7 @@ section {
 
 }
 
-.skill-logo img:hover {
+.skill-logo  img:hover {
     transform: scale(1.2);
     box-shadow:
             0 8px 10px rgba(50,255,105,0.8),
