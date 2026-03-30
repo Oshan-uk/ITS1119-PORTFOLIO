@@ -689,6 +689,7 @@ section {
 }
 
 .education-card:hover {
+    border: 2px solid red;
     transform: translateY(-10px) scale(1.05);
     box-shadow: 0 10px 25px rgba(50,255,105,0.8),
     0 -10px 25px rgba(50,255,105,0.8),
