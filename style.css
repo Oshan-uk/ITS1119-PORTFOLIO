@@ -66,9 +66,15 @@ nav > div:nth-child(2) > a{
 }
 
 
-.line:nth-child(1)::after { animation-delay: 0s; }
-.line:nth-child(2)::after { animation-delay: 0.5s; }
-.line:nth-child(3)::after { animation-delay: 4s; }
+.line:nth-child(1)::after {
+    animation-delay: 0s;
+}
+.line:nth-child(2)::after {
+    animation-delay: 0.5s;
+}
+.line:nth-child(3)::after {
+    animation-delay: 4s;
+}
 
 
 @keyframes slideRight {
@@ -133,7 +139,6 @@ header > nav > div:nth-child(1){
 
 
 /*Hero Section*/
-
 .hero-section {
     display: flex;
     align-items: center;
@@ -160,9 +165,8 @@ header > nav > div:nth-child(1){
     transition: transform 1s, background-image 0.5s, box-shadow 1s; /* smooth rotate + image + shadow */
 }
 
-/* Hover: rotate and change image */
 .hero-section .hero-image:active {
-    transform: rotateY(360deg); /* rotates fully */
+    transform: rotateY(360deg);
     background-image: url("assest/profilepic2.jpg");
     background-position: top;
     background-size: cover;
@@ -662,7 +666,6 @@ section {
     color: #ccc;
 }
 
-/* GitHub Button for Project Card */
 .projects-btn {
     margin-top: 30px;
     padding: 10px 25px;
@@ -677,7 +680,12 @@ section {
     transition: 0.3s;
 }
 
-.projects-btn:hover {
+.projects-btn a{
+    text-decoration: none;
+    color: white;
+}
+
+.projects-btn :hover {
     background: #06eff6;
     color: black;
     box-shadow: 0 0 15px purple, 0 0 25px blue;
@@ -815,7 +823,6 @@ section {
     color: #ccc;
 }
 
-/* GitHub Button for Project Card */
 .exercises-btn {
     margin-top: 30px;
     padding: 10px 25px;
