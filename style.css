@@ -686,7 +686,6 @@ section {
 }
 
 .projects-btn :hover {
-    background: #06eff6;
     color: black;
     box-shadow: 0 0 15px purple, 0 0 25px blue;
     transform: scale(1.05);
@@ -835,6 +834,10 @@ section {
     cursor: pointer;
     box-shadow: 0 0 10px #32FF69, 0 0 20px #06eff6;
     transition: 0.3s;
+}
+.exercises-btn a{
+    text-decoration: none;
+    color: white;
 }
 
 .exercises-btn:hover {
