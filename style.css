@@ -25,14 +25,24 @@ header{
 
 /* Navbar styling */
 nav {
-    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 50px;
-    background-color: #111;
+    border-radius: 20px;
     color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    padding: 10px 20px;
+    border: 1px solid cyan;
+    background: linear-gradient(132deg, #150033, #000000);
+    background-size: 400% 400%;
+    animation: gradientNav 2s ease infinite alternate;
+    z-index: 1000;
 }
+
 nav > div:nth-child(2) > a{
     color: #32FF69;
 }
@@ -45,70 +55,8 @@ nav > div:nth-child(2) > a{
 }
 
 
-.lines {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 5px;
-    overflow: hidden;
-    pointer-events: none;
-}
-
-
-.line::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -30%;
-    width: 30%;
-    height: 5px;
-    background: linear-gradient(
-            to right,
-            transparent,
-            #06eff6,
-            transparent
-    );
-    filter: blur(3px);
-    animation: slideRight 4s linear infinite;
-}
-
-
-.line:nth-child(1)::after {
-    animation-delay: 0s;
-}
-.line:nth-child(2)::after {
-    animation-delay: 0.5s;
-}
-.line:nth-child(3)::after {
-    animation-delay: 4s;
-}
-
-
-@keyframes slideRight {
-    0% {
-        left: -30%;
-    }
-    100% {
-        left: 100%;
-    }
-}
-
-
 nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: auto;
-    padding: 10px 20px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    background: linear-gradient(132deg, #150033, #000000);
-    background-size: 400% 400%;
-    animation: gradientNav 2s ease infinite alternate;
-    z-index: 1000;
+
 }
 
 @keyframes gradientNav {
