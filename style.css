@@ -217,7 +217,9 @@ header > nav > div:nth-child(1){
     font-weight: 400;
     font-style: normal;
     font-size: 60px;
-
+    background: linear-gradient(90deg, #32FF69, #00C2FF, #32FF69);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     margin-top: -10px;
     margin-bottom: 15px;
 }
