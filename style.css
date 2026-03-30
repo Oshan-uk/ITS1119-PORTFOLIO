@@ -38,12 +38,10 @@ nav > div:nth-child(2) > a{
 }
 
 .navigations a:hover{
-    background-color: #06eff6;
-    color: black;
-    border-radius: 2px;
+    color: blue;
 }
 .navigations a:active {
-    color: blue;
+    color: cyan;
 }
 
 
