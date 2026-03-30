@@ -23,7 +23,7 @@ header{
 
 
 
-/* Navbar styling */
+/* NavigationBar styling */
 nav {
     display: flex;
     justify-content: space-between;
@@ -392,10 +392,11 @@ section {
 }
 
 .about-content {
-    max-width: 500px;
+    max-width: 600px;
     height: 400px;
+    text-align: center;
     font-size: 18px;
-    line-height: 1.6;
+    line-height: 2;
     background: linear-gradient(132deg, #210157, #000000)  ;
     color: cyan;
     padding: 25px;
