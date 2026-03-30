@@ -546,14 +546,7 @@ section {
             0 0 40px rgba(6,239,246,0.8);
 }
 
-/*.right-to-left {*/
-/*    animation: scrollRightToLeft 15s linear infinite;*/
-/*}*/
 
-/*@keyframes scrollRightToLeft {*/
-/*    0% { transform: translateX(100%); }*/
-/*    100% { transform: translateX(-100%); }*/
-/*}*/
 
 .soft-skill {
     font-size: 22px;
@@ -567,14 +560,8 @@ section {
     white-space: nowrap;
 }
 
-/*.left-to-right {*/
-/*    animation: scrollLeftToRight 20s linear infinite;*/
-/*}*/
 
-/*@keyframes scrollLeftToRight {*/
-/*    0% { transform: translateX(-100%); }*/
-/*    100% { transform: translateX(100%); }*/
-/*}*/
+
 
 /* Projects Section */
 #projects {
@@ -605,7 +592,7 @@ section {
     position: relative;
     background: #111;
     border-radius: 20px;
-    border: 5px solid cyan;
+    border: 3px solid cyan;
     padding: 20px;
     width: 300px;
     margin-top: -45px;
@@ -613,11 +600,13 @@ section {
 }
 
 .project-card:hover {
+    background: linear-gradient(45deg, #000000,#06041C, #150033 );
+    border: 3px solid blue;
     transform: translateY(-10px) scale(1.05);
-    box-shadow: 0 10px 25px rgba(50,255,105,0.8),
-    0 -10px 25px rgba(50,255,105,0.8),
-    10px 0 25px rgba(50,255,105,0.8),
-    -10px 0 25px rgba(50,255,105,0.8),
+    box-shadow: 0 10px 15px rgba(50,255,105,0.8),
+    0 -10px 15px rgba(50,255,105,0.8),
+    10px 0 15px rgba(50,255,105,0.8),
+    -10px 0 15px rgba(50,255,105,0.8),
     0 0 40px rgba(6,239,246,0.8);
 }
 
@@ -645,7 +634,8 @@ section {
     font-size: 16px;
     font-weight: bold;
     color: white;
-    background: blue;
+    text-decoration: none;
+    background-color: blue;
     border: none;
     border-radius: 12px;
     cursor: pointer;
