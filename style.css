@@ -1340,14 +1340,15 @@ section {
 
     .about-content {
         font-size: 14px;
-        padding: 10px;
-        line-height: 1.4;
+        padding: 20px;
+        line-height: 1;
     }
 
     .about-image img {
         width: 200px;
         height: auto;
         margin-right: 0;
+        animation: none;
     }
 
     .technical-skills-title,
