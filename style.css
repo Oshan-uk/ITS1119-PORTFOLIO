@@ -1347,6 +1347,7 @@ section {
     }
 
     .about-image img {
+        margin-top: -50px;
         width: 200px;
         height: auto;
         margin-right: 0;
