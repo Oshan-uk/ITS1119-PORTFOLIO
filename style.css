@@ -1339,8 +1339,9 @@ section {
     }
 
     .about-content {
-        font-size: 10px;
+        font-size: 8px;
         padding: 12px;
+        line-height: 1;
     }
 
     .technical-skills-title,
