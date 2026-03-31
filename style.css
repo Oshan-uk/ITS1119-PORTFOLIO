@@ -1140,6 +1140,9 @@ section {
 
 
 @media (max-width: 768px) {
+    .background{
+        position: fixed;
+    }
 
     .menu-toggle {
         display: block;
