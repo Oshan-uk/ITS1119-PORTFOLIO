@@ -221,6 +221,7 @@ header > nav > div:nth-child(1){
     }
 
     nav{
+        position: fixed;
         width: 100vw;
     }
 }
