@@ -1339,7 +1339,7 @@ section {
     }
 
     .about-content {
-        font-size: 8px;
+        font-size: 0px;
         padding: 12px;
         line-height: 1;
     }
