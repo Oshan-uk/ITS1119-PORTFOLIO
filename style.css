@@ -1303,7 +1303,7 @@ section {
 }
 
 
-@media (max-width: 480px){
+@media (max-width: 480px) and (max-width: 312px){
 
     nav {
         padding: 8px 10px;
