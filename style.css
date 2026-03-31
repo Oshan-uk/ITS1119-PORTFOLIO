@@ -1485,183 +1485,183 @@ section {
 
 
 
-/*@media (max-width: 767px) {*/
+@media (max-width: 767px) {
 
-/*    !* ── Nav ── *!*/
-/*    nav {*/
-/*        border-radius: 0;*/
-/*        padding: 10px 16px;*/
-/*    }*/
+    /* ── Nav ── */
+    nav {
+        border-radius: 0;
+        padding: 10px 16px;
+    }
 
-/*    .navigations a {*/
-/*        font-size: 15px;*/
-/*    }*/
+    .navigations a {
+        font-size: 15px;
+    }
 
-/*    !* ── Hero ── *!*/
-/*    .hero-section {*/
-/*        padding: 90px 20px 50px;*/
-/*        gap: 24px;*/
-/*    }*/
-
-/*    .hero-section .hero-image {*/
-/*        width: 180px;*/
-/*        height: 180px;*/
-/*    }*/
-
-/*    .hero-content h1 {*/
-/*        font-size: 30px;*/
-/*    }*/
-
-/*    .hero-content h3 {*/
-/*        font-size: 18px;*/
-/*    }*/
-
-/*    .hero-content p {*/
-/*        font-size: 18px;*/
-/*    }*/
-
-/*    !* ── Section headings ── *!*/
-/*    .about-topic      { font-size: 36px; }*/
-/*    .technical-skills-title,*/
-/*    .soft-skills-title { font-size: 28px; }*/
-/*    .projects-title,*/
-/*    .exercises-title  { font-size: 28px; }*/
-/*    .education-title  { font-size: 38px; margin-top: -60px; }*/
-/*    .gallery-title    { font-size: 34px; margin-top: 0; }*/
-/*    .contact-title    { font-size: 34px; margin-top: 0; }*/
-
-/*    !* ── Skills ── *!*/
-/*    .skills-animation {*/
-/*        gap: 20px;*/
-/*    }*/
-
-/*    .skill-logo img {*/
-/*        width: 68px;*/
-/*        height: 68px;*/
-/*    }*/
-
-/*    .soft-skill {*/
-/*        font-size: 15px;*/
-/*        padding: 8px 14px;*/
-/*    }*/
-
-/*    .projects-container,*/
-/*    .exercises-container {*/
-/*        flex-direction: column;*/
-/*        align-items: center;*/
-/*        gap: 30px;*/
-/*    }*/
-
-/*    .project-card,*/
-/*    .exercises-card {*/
-/*        width: 90%;*/
-/*        max-width: 340px;*/
-/*        margin-top: 0;*/
-/*    }*/
-
-/*    !* ── Education ── *!*/
-/*    .education-container {*/
-/*        flex-direction: column;*/
-/*        align-items: center;*/
-/*    }*/
-
-/*    .education-card {*/
-/*        width: 90%;*/
-/*        max-width: 340px;*/
-/*    }*/
-
-/*    !* ── Gallery ── *!*/
-/*    .gallery-wrap {*/
-/*        flex-direction: column;*/
-/*        height: auto;*/
-/*        gap: 10px;*/
-/*        padding: 0 16px;*/
-/*    }*/
-
-/*    .item {*/
-/*        height: 160px;*/
-/*        border-radius: 14px;*/
-/*    }*/
-
-/*    .item:hover {*/
-/*        transform: none;*/
-/*    }*/
-
-/*    !* ── Contact ── *!*/
-/*    .fields form {*/
-/*        padding: 0;*/
-/*    }*/
-
-/*    !* ── Footer ── *!*/
-/*    .footer {*/
-/*        padding: 25px 16px;*/
-/*    }*/
-
-/*    .footer-right div {*/
-/*        width: 38px;*/
-/*        height: 38px;*/
-/*    }*/
-
-/*    .footer-right a img {*/
-/*        width: 28px;*/
-/*    }*/
-/*}*/
-
-@media (max-width: 480px) {
+    /* ── Hero ── */
+    .hero-section {
+        padding: 90px 20px 50px;
+        gap: 24px;
+    }
 
     .hero-section .hero-image {
-        width: 150px;
-        height: 150px;
+        width: 180px;
+        height: 180px;
     }
 
     .hero-content h1 {
-        font-size: 26px;
+        font-size: 30px;
+    }
+
+    .hero-content h3 {
+        font-size: 18px;
     }
 
     .hero-content p {
-        font-size: 16px;
+        font-size: 18px;
     }
 
-    .hero-content button {
-        width: 110px;
-    }
+    /* ── Section headings ── */
+    .about-topic      { font-size: 36px; }
+    .technical-skills-title,
+    .soft-skills-title { font-size: 28px; }
+    .projects-title,
+    .exercises-title  { font-size: 28px; }
+    .education-title  { font-size: 38px; margin-top: -60px; }
+    .gallery-title    { font-size: 34px; margin-top: 0; }
+    .contact-title    { font-size: 34px; margin-top: 0; }
 
-    .about-content {
-        font-size: 14px;
-        padding: 18px;
-    }
-
-    .about-image img {
-        width: 160px;
-        height: 220px;
+    /* ── Skills ── */
+    .skills-animation {
+        gap: 20px;
     }
 
     .skill-logo img {
-        width: 56px;
-        height: 56px;
+        width: 68px;
+        height: 68px;
     }
 
     .soft-skill {
-        font-size: 13px;
-        padding: 6px 12px;
+        font-size: 15px;
+        padding: 8px 14px;
+    }
+
+    .projects-container,
+    .exercises-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
     }
 
     .project-card,
-    .exercises-card,
+    .exercises-card {
+        width: 90%;
+        max-width: 340px;
+        margin-top: 0;
+    }
+
+    /* ── Education ── */
+    .education-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
     .education-card {
-        width: 95%;
+        width: 90%;
+        max-width: 340px;
     }
 
-    .fields input,
-    .fields textarea {
-        font-size: 14px;
+    /* ── Gallery ── */
+    .gallery-wrap {
+        flex-direction: column;
+        height: auto;
+        gap: 10px;
+        padding: 0 16px;
     }
 
-    .fields button {
-        font-size: 14px;
+    .item {
+        height: 160px;
+        border-radius: 14px;
     }
 
-    .footer-center p {
-        font-size: 13px;
+    .item:hover {
+        transform: none;
+    }
+
+    /* ── Contact ── */
+    .fields form {
+        padding: 0;
+    }
+
+    /* ── Footer ── */
+    .footer {
+        padding: 25px 16px;
+    }
+
+    .footer-right div {
+        width: 38px;
+        height: 38px;
+    }
+
+    .footer-right a img {
+        width: 28px;
     }
 }
+
+/*@media (max-width: 480px) {*/
+
+/*    .hero-section .hero-image {*/
+/*        width: 150px;*/
+/*        height: 150px;*/
+/*    }*/
+
+/*    .hero-content h1 {*/
+/*        font-size: 26px;*/
+/*    }*/
+
+/*    .hero-content p {*/
+/*        font-size: 16px;*/
+/*    }*/
+
+/*    .hero-content button {*/
+/*        width: 110px;*/
+/*    }*/
+
+/*    .about-content {*/
+/*        font-size: 14px;*/
+/*        padding: 18px;*/
+/*    }*/
+
+/*    .about-image img {*/
+/*        width: 160px;*/
+/*        height: 220px;*/
+/*    }*/
+
+/*    .skill-logo img {*/
+/*        width: 56px;*/
+/*        height: 56px;*/
+/*    }*/
+
+/*    .soft-skill {*/
+/*        font-size: 13px;*/
+/*        padding: 6px 12px;*/
+/*    }*/
+
+/*    .project-card,*/
+/*    .exercises-card,*/
+/*    .education-card {*/
+/*        width: 95%;*/
+/*    }*/
+
+/*    .fields input,*/
+/*    .fields textarea {*/
+/*        font-size: 14px;*/
+/*    }*/
+
+/*    .fields button {*/
+/*        font-size: 14px;*/
+/*    }*/
+
+/*    .footer-center p {*/
+/*        font-size: 13px;*/
+/*    }*/
+/*}*/
