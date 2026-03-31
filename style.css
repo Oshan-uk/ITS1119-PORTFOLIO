@@ -1287,6 +1287,109 @@ section {
 }
 
 
+@media (max-width: 480px) {
+
+    /* ===== NAVBAR ===== */
+    nav {
+        padding: 8px 10px;
+    }
+
+    .menu-toggle {
+        font-size: 24px;
+    }
+
+    /* ===== HERO ===== */
+    .hero-section {
+        padding: 90px 10px;
+        gap: 25px;
+    }
+
+    .hero-section .hero-image {
+        width: 200px;
+    }
+
+    .hero-content h1 {
+        font-size: 26px;
+    }
+
+    .hero-content h3 {
+        font-size: 20px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    /* ===== ABOUT ===== */
+    .about-topic {
+        font-size: 30px;
+    }
+
+    .about-content {
+        font-size: 14px;
+        padding: 15px;
+    }
+
+    /* ===== SKILLS ===== */
+    .technical-skills-title,
+    .soft-skills-title {
+        font-size: 28px;
+    }
+
+    .skill-logo img {
+        width: 55px;
+        height: 55px;
+    }
+
+    /* ===== PROJECTS ===== */
+    .projects-title {
+        font-size: 28px;
+    }
+
+    .project-card {
+        width: 100%;
+    }
+
+    /* ===== EDUCATION ===== */
+    .education-title {
+        font-size: 35px;
+    }
+
+    /* ===== EXERCISES ===== */
+    .exercises-title {
+        font-size: 28px;
+    }
+
+    .exercises-card {
+        width: 100%;
+    }
+
+    /* ===== GALLERY ===== */
+    .gallery-title {
+        font-size: 30px;
+    }
+
+    .item {
+        height: 150px;
+    }
+
+    /* ===== CONTACT ===== */
+    .contact-title {
+        font-size: 30px;
+    }
+
+    .info p {
+        font-size: 14px;
+        padding-left: 0;
+    }
+
+    /* ===== FOOTER ===== */
+    .footer-left {
+        font-size: 14px;
+        padding-left: 0;
+    }
+}
+
 
 
 
