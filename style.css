@@ -1487,6 +1487,7 @@ section {
 
 @media (max-width: 600px) {
     .background{
+        height: 100vh;
         position: fixed;
     }
 
