@@ -1161,28 +1161,28 @@ section {
 
 
 
-@media all and (max-width: 600px){
+/*@media all and (max-width: 600px){*/
 
-    .background{
-        position: fixed;
-    }
-    body {
-        overflow-x: hidden;
-    }
-    .menu-toggle { display: block; }   /* show hamburger */
-    .navigations { display: none; }    /* hide links initially */
-    .navigations.active { display: flex; }
+/*    .background{*/
+/*        position: fixed;*/
+/*    }*/
+/*    body {*/
+/*        overflow-x: hidden;*/
+/*    }*/
+/*    .menu-toggle { display: block; }   !* show hamburger *!*/
+/*    .navigations { display: none; }    !* hide links initially *!*/
+/*    .navigations.active { display: flex; }*/
 
-    .hero-section{
-        align-items: center;
-        flex-direction: column;
-    }
+/*    .hero-section{*/
+/*        align-items: center;*/
+/*        flex-direction: column;*/
+/*    }*/
 
-    .hero-section .hero-image {
-        width: 250px;
-    }
+/*    .hero-section .hero-image {*/
+/*        width: 250px;*/
+/*    }*/
 
-}
+/*}*/
 
 
 
@@ -1326,107 +1326,107 @@ section {
 /*}*/
 
 
-/*@media (max-width: 600px){*/
+@media (max-width: 600px){
 
-/*    nav {*/
-/*        padding: 8px 10px;*/
-/*    }*/
+    nav {
+        padding: 8px 10px;
+    }
 
-/*    .menu-toggle {*/
-/*        font-size: 24px;*/
-/*    }*/
+    .menu-toggle {
+        font-size: 24px;
+    }
 
-/*    .hero-section {*/
-/*        padding: 90px 10px;*/
-/*        gap: 25px;*/
-/*    }*/
+    .hero-section {
+        padding: 90px 10px;
+        gap: 25px;
+    }
 
-/*    .hero-section .hero-image {*/
-/*        margin-top: -100px;*/
-/*        width: 200px;*/
-/*    }*/
+    .hero-section .hero-image {
+        margin-top: -100px;
+        width: 200px;
+    }
 
-/*    .hero-content h1 {*/
-/*        font-size: 26px;*/
-/*    }*/
+    .hero-content h1 {
+        font-size: 26px;
+    }
 
-/*    .hero-content h3 {*/
-/*        font-size: 15px;*/
-/*    }*/
+    .hero-content h3 {
+        font-size: 15px;
+    }
 
-/*    .hero-content p {*/
-/*        font-size: 16px;*/
-/*    }*/
+    .hero-content p {
+        font-size: 16px;
+    }
 
-/*    .about-topic {*/
-/*        font-size: 30px;*/
-/*    }*/
+    .about-topic {
+        font-size: 30px;
+    }
 
-/*    .about-content {*/
-/*        font-size: 14px;*/
-/*        padding: 20px;*/
-/*        line-height: 1;*/
-/*    }*/
+    .about-content {
+        font-size: 14px;
+        padding: 20px;
+        line-height: 1;
+    }
 
-/*    .about-image img {*/
-/*        width: 200px;*/
-/*        height: auto;*/
-/*        margin-right: 0;*/
-/*        animation: none;*/
-/*    }*/
+    .about-image img {
+        width: 200px;
+        height: auto;
+        margin-right: 0;
+        animation: none;
+    }
 
-/*    .technical-skills-title,*/
-/*    .soft-skills-title {*/
-/*        font-size: 28px;*/
-/*    }*/
+    .technical-skills-title,
+    .soft-skills-title {
+        font-size: 28px;
+    }
 
-/*    .skill-logo img {*/
-/*        width: 55px;*/
-/*        height: 55px;*/
-/*    }*/
+    .skill-logo img {
+        width: 55px;
+        height: 55px;
+    }
 
-/*    .projects-title {*/
-/*        font-size: 28px;*/
-/*    }*/
+    .projects-title {
+        font-size: 28px;
+    }
 
-/*    .project-card {*/
-/*        width: 100%;*/
-/*    }*/
+    .project-card {
+        width: 100%;
+    }
 
-/*    .education-title {*/
-/*        font-size: 35px;*/
-/*    }*/
+    .education-title {
+        font-size: 35px;
+    }
 
-/*    .exercises-title {*/
-/*        font-size: 28px;*/
-/*    }*/
+    .exercises-title {
+        font-size: 28px;
+    }
 
-/*    .exercises-card {*/
-/*        width: 100%;*/
-/*    }*/
+    .exercises-card {
+        width: 100%;
+    }
 
-/*    .gallery-title {*/
-/*        font-size: 30px;*/
-/*    }*/
+    .gallery-title {
+        font-size: 30px;
+    }
 
-/*    .item {*/
-/*        height: 150px;*/
-/*    }*/
+    .item {
+        height: 150px;
+    }
 
-/*    .contact-title {*/
-/*        font-size: 30px;*/
-/*    }*/
+    .contact-title {
+        font-size: 30px;
+    }
 
-/*    .info p {*/
-/*        font-size: 14px;*/
-/*        padding-left: 0;*/
-/*    }*/
+    .info p {
+        font-size: 14px;
+        padding-left: 0;
+    }
 
-/*    .footer-left {*/
-/*        font-size: 14px;*/
-/*        padding-left: 0;*/
-/*    }*/
-/*}*/
+    .footer-left {
+        font-size: 14px;
+        padding-left: 0;
+    }
+}
 
 
 /*!* --- Base Reset & Setup --- *!*/
