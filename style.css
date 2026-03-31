@@ -1161,8 +1161,9 @@ section {
 
 
 
-@media (max-width: 600px){
+@media all and (max-width: 768px){
 
+    background: fixed;
     body {
         overflow-x: hidden;
     }
