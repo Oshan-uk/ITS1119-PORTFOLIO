@@ -1607,61 +1607,61 @@ section {
 /*    }*/
 /*}*/
 
-/*@media (max-width: 480px) {*/
+@media (max-width: 480px) {
 
-/*    .hero-section .hero-image {*/
-/*        width: 150px;*/
-/*        height: 150px;*/
-/*    }*/
+    .hero-section .hero-image {
+        width: 150px;
+        height: 150px;
+    }
 
-/*    .hero-content h1 {*/
-/*        font-size: 26px;*/
-/*    }*/
+    .hero-content h1 {
+        font-size: 26px;
+    }
 
-/*    .hero-content p {*/
-/*        font-size: 16px;*/
-/*    }*/
+    .hero-content p {
+        font-size: 16px;
+    }
 
-/*    .hero-content button {*/
-/*        width: 110px;*/
-/*    }*/
+    .hero-content button {
+        width: 110px;
+    }
 
-/*    .about-content {*/
-/*        font-size: 14px;*/
-/*        padding: 18px;*/
-/*    }*/
+    .about-content {
+        font-size: 14px;
+        padding: 18px;
+    }
 
-/*    .about-image img {*/
-/*        width: 160px;*/
-/*        height: 220px;*/
-/*    }*/
+    .about-image img {
+        width: 160px;
+        height: 220px;
+    }
 
-/*    .skill-logo img {*/
-/*        width: 56px;*/
-/*        height: 56px;*/
-/*    }*/
+    .skill-logo img {
+        width: 56px;
+        height: 56px;
+    }
 
-/*    .soft-skill {*/
-/*        font-size: 13px;*/
-/*        padding: 6px 12px;*/
-/*    }*/
+    .soft-skill {
+        font-size: 13px;
+        padding: 6px 12px;
+    }
 
-/*    .project-card,*/
-/*    .exercises-card,*/
-/*    .education-card {*/
-/*        width: 95%;*/
-/*    }*/
+    .project-card,
+    .exercises-card,
+    .education-card {
+        width: 95%;
+    }
 
-/*    .fields input,*/
-/*    .fields textarea {*/
-/*        font-size: 14px;*/
-/*    }*/
+    .fields input,
+    .fields textarea {
+        font-size: 14px;
+    }
 
-/*    .fields button {*/
-/*        font-size: 14px;*/
-/*    }*/
+    .fields button {
+        font-size: 14px;
+    }
 
-/*    .footer-center p {*/
-/*        font-size: 13px;*/
-/*    }*/
-/*}*/
+    .footer-center p {
+        font-size: 13px;
+    }
+}
