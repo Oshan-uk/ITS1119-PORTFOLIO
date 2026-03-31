@@ -1609,6 +1609,9 @@ section {
 
 @media (max-width: 480px) {
 
+    .background{
+        position: fixed;
+    }
     .hero-section .hero-image {
         width: 150px;
         height: 150px;
