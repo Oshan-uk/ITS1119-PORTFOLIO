@@ -1329,6 +1329,7 @@ section {
 @media all and (max-width: 600px){
 
     nav {
+        background: white;
         padding: 8px 10px;
     }
 
