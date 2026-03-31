@@ -1486,6 +1486,9 @@ section {
 
 
 @media (max-width: 767px) {
+    .background{
+        position: fixed;
+    }
 
     /* ── Nav ── */
     nav {
