@@ -212,6 +212,7 @@ header > nav > div:nth-child(1){
 /*Hero Section*/
 .hero-section {
     display: flex;
+    flex-direction: row;
     align-items: center;
     gap: 150px;
     padding: 80px;
@@ -374,6 +375,7 @@ h3 span {
 /* About Section */
 .about {
     display: flex;
+    flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
     gap: 80px;
@@ -1159,7 +1161,25 @@ section {
 
 
 
+@media (max-width: 600px){
 
+    body {
+        overflow-x: hidden;
+    }
+    .menu-toggle { display: block; }   /* show hamburger */
+    .navigations { display: none; }    /* hide links initially */
+    .navigations.active { display: flex; }
+
+    .hero-section{
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .hero-section .hero-image {
+        width: 250px;
+    }
+
+}
 
 
 
