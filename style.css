@@ -1338,7 +1338,7 @@ section {
         font-size: 30px;
     }
 
-    .about-content {
+    .about-left .about-content {
         font-size: smaller;
         padding: 5px;
         line-height: 0.3;
