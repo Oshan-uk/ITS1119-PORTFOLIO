@@ -1319,6 +1319,7 @@ section {
     }
 
     .hero-section .hero-image {
+        margin-top: -100px;
         width: 200px;
     }
 
