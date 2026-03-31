@@ -96,7 +96,7 @@ header > nav > div:nth-child(1){
 
 .background {
     position: fixed;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     top: 0;
     left: 0;
@@ -1140,37 +1140,149 @@ section {
 
 
 @media (max-width: 768px) {
-    /*.background {*/
-    /*    position: fixed;*/
-    /*    top: 0;*/
-    /*    left: 0;*/
-    /*    width: 100%;*/
-    /*    height: 100dvh; !* 👈 FIXES MOBILE HEIGHT ISSUE *!*/
 
-    /*    background: #06041C;*/
-    /*    overflow: hidden;*/
-    /*    z-index: -1;*/
-    /*}*/
+    /* ===== GENERAL ===== */
+    body {
+        overflow-x: hidden;
+    }
 
+    /* ===== NAVBAR ===== */
     .menu-toggle {
         display: block;
     }
 
     .navigations {
         display: none;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        background: black;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 20px;
+        border-left: 2px solid cyan;
     }
 
     .navigations.active {
         display: flex;
-        flex-direction: column;
     }
 
-    nav{
-        position: fixed;
+    nav {
         width: 100%;
-        left: 0;
-        top: 0;
-        z-index: 1000;
+        padding: 10px;
+    }
+
+    /* ===== HERO SECTION ===== */
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+        padding: 100px 20px;
+    }
+
+    .hero-section .hero-image {
+        width: 250px;
+    }
+
+    .hero-content h1 {
+        font-size: 35px;
+    }
+
+    .hero-content p {
+        font-size: 20px;
+    }
+
+    /* ===== ABOUT ===== */
+    .about {
+        flex-direction: column;
+        padding: 20px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-content {
+        width: 100%;
+        height: auto;
+    }
+
+    .about-image img {
+        margin: 0;
+        width: 250px;
+        height: auto;
+    }
+
+    /* ===== SKILLS ===== */
+    #skills {
+        height: auto;
+        padding: 40px 20px;
+    }
+
+    .skills-animation {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .skill-logo img {
+        width: 70px;
+        height: 70px;
+    }
+
+    /* ===== PROJECTS ===== */
+    #projects {
+        height: auto;
+        padding: 80px 20px;
+    }
+
+    .projects-container {
+        gap: 30px;
+    }
+
+    /* ===== EDUCATION ===== */
+    #education {
+        padding: 80px 20px;
+    }
+
+    /* ===== EXERCISES ===== */
+    #exercises {
+        height: auto;
+        padding: 80px 20px;
+    }
+
+    .exercises-container {
+        gap: 30px;
+    }
+
+    /* ===== GALLERY ===== */
+    .gallery-wrap {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .item {
+        height: 200px;
+    }
+
+    /* ===== CONTACT ===== */
+    .fields form {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    /* ===== FOOTER ===== */
+    .footer {
+        flex-direction: column;
+        height: auto;
+        gap: 20px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .footer-center {
+        position: static;
+        transform: none;
+        margin-top: 10px;
     }
 }
 
