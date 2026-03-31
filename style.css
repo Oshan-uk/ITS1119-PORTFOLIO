@@ -407,10 +407,25 @@ section {
     line-height: 2;
     background: linear-gradient(132deg, #210157, #000000)  ;
     color: cyan;
+    border-right: 1px solid cyan;
+    border-left: 1px solid cyan;
     padding: 25px;
     border-radius: 25px;
     opacity: 0.85;
     margin-bottom: 40px;
+    animation: moveBorder 0.9s linear infinite alternate;
+}
+@keyframes moveBorder {
+    0%{
+        border-left: 1px solid blue;
+        border-right: 1px solid blue;
+
+    }
+    100%{
+        border-left: 1px solid cyan;
+        border-right: 1px solid cyan;
+
+    }
 }
 
 
@@ -605,11 +620,23 @@ section {
     width: 300px;
     margin-top: -45px;
     transition: transform 0.3s, box-shadow 0.3s;
+    animation: moveBorder2 0.8s linear infinite alternate;
+}
+
+@keyframes moveBorder2 {
+    0%{
+        border: 3px solid blue;
+
+    }
+    100%{
+        border: 3px solid cyan;
+
+    }
 }
 
 .project-card:hover {
     background: linear-gradient(45deg, #000000,#06041C, #150033 );
-    border: 3px solid blue;
+    border: 2px solid red;
     transform: translateY(-10px) scale(1.05);
     box-shadow: 0 10px 15px rgba(50,255,105,0.8),
     0 -10px 15px rgba(50,255,105,0.8),
@@ -1289,7 +1316,6 @@ section {
 
 @media (max-width: 480px) {
 
-    /* ===== NAVBAR ===== */
     nav {
         padding: 8px 10px;
     }
@@ -1298,7 +1324,6 @@ section {
         font-size: 24px;
     }
 
-    /* ===== HERO ===== */
     .hero-section {
         padding: 90px 10px;
         gap: 25px;
@@ -1320,7 +1345,6 @@ section {
         font-size: 16px;
     }
 
-    /* ===== ABOUT ===== */
     .about-topic {
         font-size: 30px;
     }
@@ -1330,7 +1354,6 @@ section {
         padding: 15px;
     }
 
-    /* ===== SKILLS ===== */
     .technical-skills-title,
     .soft-skills-title {
         font-size: 28px;
@@ -1341,7 +1364,6 @@ section {
         height: 55px;
     }
 
-    /* ===== PROJECTS ===== */
     .projects-title {
         font-size: 28px;
     }
@@ -1350,12 +1372,10 @@ section {
         width: 100%;
     }
 
-    /* ===== EDUCATION ===== */
     .education-title {
         font-size: 35px;
     }
 
-    /* ===== EXERCISES ===== */
     .exercises-title {
         font-size: 28px;
     }
@@ -1364,7 +1384,6 @@ section {
         width: 100%;
     }
 
-    /* ===== GALLERY ===== */
     .gallery-title {
         font-size: 30px;
     }
@@ -1373,7 +1392,6 @@ section {
         height: 150px;
     }
 
-    /* ===== CONTACT ===== */
     .contact-title {
         font-size: 30px;
     }
@@ -1383,7 +1401,6 @@ section {
         padding-left: 0;
     }
 
-    /* ===== FOOTER ===== */
     .footer-left {
         font-size: 14px;
         padding-left: 0;
