@@ -205,26 +205,7 @@ header > nav > div:nth-child(1){
     color: rgb(125, 116, 252);
 }
 
-@media (max-width: 768px) {
 
-    .menu-toggle {
-        display: block;
-    }
-
-    .navigations {
-        display: none;
-    }
-
-    .navigations.active {
-        display: flex;
-        flex-direction: column;
-    }
-
-    nav{
-        position: fixed;
-        width: 100vw;
-    }
-}
 
 
 
@@ -1158,7 +1139,28 @@ section {
 
 
 
+@media (max-width: 768px) {
 
+    .menu-toggle {
+        display: block;
+    }
+
+    .navigations {
+        display: none;
+    }
+
+    .navigations.active {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav{
+        position: fixed;
+        width: 100%;
+        left: 0;
+        top: 0
+    }
+}
 
 
 
