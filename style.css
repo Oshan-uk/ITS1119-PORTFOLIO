@@ -55,9 +55,6 @@ nav > div:nth-child(2) > a{
 }
 
 
-nav {
-
-}
 
 @keyframes gradientNav {
     0% {
@@ -196,6 +193,38 @@ header > nav > div:nth-child(1){
     transform-origin: 25vw -3vh;
     box-shadow: 40vmin 0 5.196265905749415vmin currentColor;
 }
+
+/*Responsive Header*/
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.menu-toggle i {
+    color: rgb(125, 116, 252);
+}
+
+@media (max-width: 768px) {
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .navigations {
+        display: none;
+    }
+
+    .navigations.active {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav{
+        width: 100vw;
+    }
+}
+
 
 
 /*Hero Section*/
