@@ -1163,7 +1163,9 @@ section {
 
 @media all and (max-width: 600px){
 
-    background: fixed;
+    .background{
+        position: fixed;
+    }
     body {
         overflow-x: hidden;
     }
