@@ -1329,6 +1329,27 @@ section {
         gap: 30px;
     }
 
+    .technical-skills-title,
+    .soft-skills-title {
+        font-size: 28px;
+        margin-top: 0;
+    }
+
+    .skills-animation {
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .skill-logo img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .soft-skill {
+        font-size: 14px;
+        padding: 8px 14px;
+    }
 
 
 
