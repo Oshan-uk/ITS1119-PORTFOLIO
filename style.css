@@ -1376,6 +1376,30 @@ section {
         margin-top: 0;
     }
 
+
+
+    #education {
+        padding: 60px 16px 40px;
+    }
+
+    .education-title {
+        font-size: 36px;
+        margin-top: 0;
+        margin-bottom: 24px;
+    }
+
+    .education-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .education-card {
+        width: 100%;
+        max-width: 320px;
+    }
+
+
 }
 
 
