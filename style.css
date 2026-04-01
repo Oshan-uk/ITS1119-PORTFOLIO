@@ -1185,7 +1185,7 @@ section {
 
 @media (max-width: 768px) {
     nav {
-        border-radius: 0;
+        border-radius: 20px;
         padding: 10px 15px;
         position: fixed;
         top: 0;
@@ -1196,7 +1196,7 @@ section {
 
     .menu-toggle {
         display: block;
-        position: static; /* remove absolute so it stays in flex row */
+        position: static;
     }
 
     .navigations {
@@ -1207,10 +1207,10 @@ section {
         text-align: center;
         background: rgba(0, 0, 0, 0.95);
         position: absolute;
-        top: 56px;           /* exactly nav height */
+        top: 56px;
         left: 0;
         padding: 10px 0;
-        border-radius: 0 0 10px 10px;
+        border-radius: 20px;
         border-top: 1px solid cyan;
     }
 
@@ -1457,6 +1457,27 @@ section {
     .item:hover {
         flex: 2;
         transform: scale(1.02);
+    }
+
+
+    #contact {
+        height: auto;
+        padding: 60px 16px 40px;
+    }
+
+    .contact-title {
+        font-size: 34px;
+        margin-top: 0;
+    }
+
+    .fields form {
+        margin-left: -50px;
+        width: 200%;
+        max-width: 1200px;
+    }
+
+    .info{
+        margin-top: 40px;
     }
 }
 
