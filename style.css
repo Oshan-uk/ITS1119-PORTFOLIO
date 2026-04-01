@@ -1179,52 +1179,78 @@ section {
 
 
 
+
+
+
+
 @media (max-width: 768px) {
-    .hero-section {
-        flex-direction: column;
-        gap: 50px;
-        padding: 40px 20px;
-        text-align: center;
-    }
-
-    .hero-section .hero-image {
-        width: 80%;
-        max-width: 300px;
-        margin-top: 50px;
-    }
-
-    .hero-content h1 {
-        font-size: 40px;
-    }
-
-    .hero-content h3 {
-        font-size: 24px;
-    }
-
-    .hero-content p {
-        font-size: 18px;
-        max-width: 90%;
-        margin: 0 auto;
-        line-height: 1.4;
-        padding: 30px;
+    nav {
+        border-radius: 0;
+        padding: 10px 15px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
     }
 
     .menu-toggle {
-        display: block; /* show hamburger on mobile */
+        display: block;
+        position: static; /* remove absolute so it stays in flex row */
     }
 
     .navigations {
-        display: none; /* hide nav links initially */
+        display: none;
         flex-direction: column;
-        /*width: calc(100% - 40px);*/
-        gap: 10px;
         width: 100%;
+        gap: 0;
         text-align: center;
-        background: rgba(0,0,0,0.8);
+        background: rgba(0, 0, 0, 0.95);
         position: absolute;
-        top: 60px;
+        top: 56px;           /* exactly nav height */
         left: 0;
         padding: 10px 0;
-        border-radius: 10px;
+        border-radius: 0 0 10px 10px;
+        border-top: 1px solid cyan;
+    }
+
+    .navigations.open {
+        display: flex;
+    }
+
+    .navigations a {
+        padding: 12px 0;
+        font-size: 16px;
+        border-bottom: 1px solid rgba(0,255,255,0.1);
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
