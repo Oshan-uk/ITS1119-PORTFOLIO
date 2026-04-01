@@ -1479,6 +1479,33 @@ section {
     .info{
         margin-top: 40px;
     }
+
+
+    .footer {
+        flex-direction: column;
+        height: auto;
+        padding: 24px 16px;
+        gap: 16px;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .footer-left {
+        padding-left: 0;
+        font-size: 14px;
+        align-items: center;
+    }
+
+    .footer-center {
+        position: static;
+        transform: none;
+        margin-top: 0;
+    }
+
+    .footer-right {
+        justify-content: center;
+    }
+
 }
 
 
