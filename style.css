@@ -924,7 +924,7 @@ section {
 }
 
 .item-2:hover{
-    background-position: top;
+    background-position: bottom;
 }
 
 .item-1 {
@@ -940,7 +940,7 @@ section {
 }
 
 .item-4 {
-    background-image: url(assest/Gallery4.jpg);
+    background-image: url(assest/ProfilePic4.png);
 }
 
 .item-5 {
