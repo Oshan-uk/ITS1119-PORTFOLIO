@@ -232,10 +232,10 @@ header > nav > div:nth-child(1){
     aspect-ratio: 1/1;
     border-radius: 50%;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top;
     background-size: cover;
     box-shadow: 0 0 10px blue, 0 0 20px purple, 0 0 30px blue;
-    background-image: url("assest/Profilepic.jpeg");
+    background-image: url("assest/ProfilePic3.png");
     transition: transform 3s ease;
     cursor: pointer;
     animation: glowBorder 3s linear infinite alternate;
@@ -1449,24 +1449,27 @@ section {
     }
 
     .gallery-wrap {
-        flex-direction: column;
-        /*display: grid;*/
-        grid-template-columns: 2fr 1fr;
-        height: auto;
-        gap: 8px;
+        display: flex;
+        flex-direction: row;      /* side by side like |||||||| */
+        height: 300px;            /* fixed height for the bars */
+        gap: 6px;
     }
 
     .item {
-        height: 130px;
-        flex: unset;
-        border-radius: 12px;
+        flex: 1;                  /* equal width bars */
+        height: 100%;
+        border-radius: 10px;
+        transition: flex 0.5s ease, transform 0.4s ease;
+        background-size: cover;
+        background-position: center;
+        cursor: pointer;
     }
 
     .item:hover {
-        flex: 2;
+        flex: 4;                  /* expands on hover */
         transform: scale(1.02);
+        background-position: center;
     }
-
 
     #contact {
         height: auto;
