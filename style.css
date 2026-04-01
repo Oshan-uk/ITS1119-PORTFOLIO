@@ -1323,6 +1323,12 @@ section {
     }
 
 
+    #skills {
+        height: auto;
+        padding: 60px 16px 40px;
+        gap: 30px;
+    }
+
 
 
 
