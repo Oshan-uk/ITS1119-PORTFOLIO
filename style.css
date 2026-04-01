@@ -1227,7 +1227,7 @@ section {
 
     .background {
         position: fixed;
-        width: 100%;
+        width: 100vw;
         height: 100%;
         overflow: hidden;
     }
@@ -1278,7 +1278,15 @@ section {
         max-width: 100%;
         font-size: 15px;
     }
+   span {
+        text-align: center; /* centers the whole line */
+    }
 
+
+    .hero-content h3 span {
+        display: block;
+        align-items: center;
+    }
 
 
     .about {
