@@ -1138,7 +1138,10 @@ section {
     color: grey;
     padding-left: 40px;
 }
-
+.footer-left > p:nth-child(2) > a{
+    text-decoration: none;
+    color: grey;
+}
 .footer-right a img {
     width: 35px;
     transition: 0.3s;
