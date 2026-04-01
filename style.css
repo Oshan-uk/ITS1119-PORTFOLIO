@@ -1233,6 +1233,15 @@ section {
     }
 
 
+    .hero-section {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 24px;
+        padding: 90px 16px 40px;
+        text-align: center;
+        min-height: 100svh;
+    }
+
 
 
 
