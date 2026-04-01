@@ -1517,7 +1517,410 @@ section {
 }
 
 
+/* Tablet & iPad (769px – 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
 
+    nav {
+        padding: 8px 16px;
+        border-radius: 16px;
+    }
+
+    header > nav > div:nth-child(1) {
+        width: 55px;
+        height: 32px;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .navigations {
+        display: flex;
+        flex-direction: row;
+        gap: 14px;
+        background: transparent;
+        position: static;
+        padding: 0;
+        border-top: none;
+    }
+
+    .navigations a {
+        font-size: 13px;
+        border-bottom: none;
+        padding: 0;
+    }
+
+
+    .hero-section {
+        flex-direction: row;
+        gap: 40px;
+        padding: 80px 40px 40px;
+        min-height: 100svh;
+        text-align: left;
+        align-items: center;
+    }
+
+    .hero-section .hero-image {
+        width: 300px;
+        height: 300px;
+        min-width: 300px;
+        max-width: 300px;
+        margin-top: 20px;
+    }
+
+    .hero-content {
+        margin-top: 0;
+    }
+
+    .hero-content h1 {
+        font-size: 36px;
+        margin-bottom: 10px;
+    }
+
+    .hero-content h3 {
+        font-size: 20px;
+        margin-bottom: 16px;
+    }
+
+    .hero-content p {
+        font-size: 18px;
+        margin-bottom: 20px;
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .hero-content span {
+        font-size: 14px;
+        max-width: 80%;
+    }
+
+    .hero-content h3 span {
+        display: inline;
+    }
+
+    .hero-content button {
+        width: 110px;
+        height: 28px;
+    }
+
+
+    .about {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 30px;
+        padding: 20px 40px;
+    }
+
+    .about-left {
+        align-items: flex-start;
+        width: 65%;
+    }
+
+    .about-topic {
+        font-size: 36px;
+        padding-bottom: 16px;
+        text-align: left;
+    }
+
+    .about-content {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        min-height: 280px;
+        font-size: 15px;
+        line-height: 1.8;
+        padding: 18px;
+        margin-bottom: 20px;
+    }
+
+    .about-content::first-letter {
+        font-size: 44px;
+    }
+
+    .about-image {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        animation: none;
+    }
+
+    .about-image img {
+        width: 180px;
+        height: 240px;
+        margin-right: 10px;
+        margin-top: 85px;
+        animation: none;
+    }
+
+
+    #skills {
+        height: auto;
+        padding: 50px 20px 40px;
+        gap: 40px;
+    }
+
+    .technical-skills-title,
+    .soft-skills-title {
+        font-size: 30px;
+        margin-top: 0;
+        margin-bottom: 14px;
+    }
+
+    .skills-animation {
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+    }
+
+    .skill-logo img {
+        width: 72px;
+        height: 72px;
+    }
+
+    .soft-skill {
+        font-size: 16px;
+        padding: 8px 14px;
+    }
+
+
+    #projects {
+        height: auto;
+        padding: 60px 30px 40px;
+    }
+
+    .projects-title {
+        font-size: 32px;
+        margin-top: -50px;
+        margin-bottom: 40px;
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+
+    .projects-container {
+        flex-direction: row;
+        justify-content: center;
+        align-items: stretch;
+        gap: 20px;
+        padding: 0 20px;
+    }
+
+    .project-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        flex: 1;
+        max-width: 280px;
+        min-height: 480px;
+    }
+
+    .project-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .projects-btn {
+        align-self: center;
+        margin-top: 20px;
+    }
+
+
+    #education {
+        padding: 60px 30px 40px;
+    }
+
+    .education-title {
+        font-size: 42px;
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+
+    .education-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 24px;
+    }
+
+    .education-card {
+        width: calc(50% - 12px);
+        max-width: 300px;
+    }
+
+    .degree {
+        font-size: 17px;
+    }
+
+    .institution {
+        font-size: 14px;
+    }
+
+    .year {
+        font-size: 13px;
+    }
+
+    .description {
+        font-size: 13px;
+    }
+
+
+    #exercises {
+        height: auto;
+        padding: 60px 30px 40px;
+    }
+
+    .exercises-title {
+        font-size: 32px;
+        margin-top: -50px;
+        margin-bottom: 36px;
+    }
+
+    .exercises-container {
+        flex-direction: row;
+        justify-content: center;
+        align-items: stretch;
+        gap: 20px;
+    }
+
+    .exercises-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        flex: 1;
+        max-width: 280px;
+        min-height: 480px;
+    }
+
+    .exercises-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .exercises-btn {
+        align-self: center;
+        margin-top: -50px;
+    }
+
+
+    #gallery {
+        height: auto;
+        padding-bottom: 40px;
+    }
+
+    .gallery-title {
+        font-size: 36px;
+        margin-top: 0;
+        padding-top: 60px;
+    }
+
+    .container {
+        padding: 30px 30px;
+        max-width: 100%;
+    }
+
+    .gallery-wrap {
+        flex-direction: row;
+        height: 260px;
+        gap: 8px;
+    }
+
+    .item {
+        flex: 1;
+        height: 100%;
+        border-radius: 14px;
+        border-width: 3px;
+    }
+
+    .item:hover {
+        flex: 2.5;
+        transform: scale(1.02);
+    }
+
+
+    #contact {
+        height: auto;
+        padding: 60px 30px 40px;
+    }
+
+    .contact-title {
+        font-size: 36px;
+        margin-top: 0;
+        margin-bottom: 36px;
+    }
+
+    .info p {
+        font-size: 16px;
+        padding-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .fields form {
+        width: 100%;
+        max-width: 580px;
+        margin-left: 0;
+        gap: 12px;
+        padding-right: 0;
+    }
+
+    .fields form button {
+        width: 150px;
+    }
+
+    .fields button {
+        padding: 10px;
+    }
+
+    .info {
+        margin-top: 20px;
+    }
+
+
+    .footer {
+        flex-direction: row;
+        height: 100px;
+        padding: 0 30px;
+        margin-top: 40px;
+        gap: 0;
+        text-align: left;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .footer-left {
+        font-size: 15px;
+        padding-left: 10px;
+        align-items: flex-start;
+    }
+
+    .footer-center {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 60px;
+    }
+
+    .footer-center p {
+        font-size: 14px;
+    }
+
+    .footer-right {
+        justify-content: flex-end;
+    }
+
+    .footer-right div {
+        width: 38px;
+        height: 38px;
+    }
+
+    .footer-right a img {
+        width: 28px;
+    }
+}
 
 
 
