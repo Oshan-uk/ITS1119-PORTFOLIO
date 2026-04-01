@@ -373,7 +373,10 @@ h3 span {
     background: #ec2311;
     box-shadow: 0px 0px 10px #ec2311;
 
+}
 
+.hero-content button a{
+    text-decoration: none;
 }
 
 /* About Section */
