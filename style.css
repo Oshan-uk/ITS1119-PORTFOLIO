@@ -1039,7 +1039,7 @@ section {
 /* QR Code */
 .qr-container {
     position: fixed;
-    bottom: 20px;
+    bottom: 40px;
     left: -80px;
     z-index: 1000;
     display: flex;
@@ -1077,7 +1077,7 @@ section {
     pointer-events: none;
     transform: translateY(-10px);
     transition: opacity 0.3s, transform 0.3s;
-    background: white;
+    background: linear-gradient(90deg, #32FF69, #06eff6, #ff00ff);
     padding: 10px;
     margin-left: 100px;
     border-radius: 15px;
