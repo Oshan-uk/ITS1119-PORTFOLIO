@@ -1036,17 +1036,17 @@ section {
 
 
 
-/*QR Code*/
+/* QR Code */
 .qr-container {
     position: fixed;
     bottom: 20px;
-    left: 20px;
-    transform: translateY(160px);
+    left: -80px;
     z-index: 1000;
-}
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 10px;
 
-#qr-toggle {
-    display: none;
 }
 
 .qr-btn {
@@ -1058,11 +1058,14 @@ section {
     justify-content: center;
     border-radius: 20%;
     cursor: pointer;
-    transform: translateY(360px);
+    border: none;
     box-shadow: 0 0 10px #32FF69, 0 0 20px #06eff6;
+    transition: transform 0.2s;
 }
 
-
+.qr-btn:hover {
+    transform: scale(1.1);
+}
 
 .qr-btn i {
     font-size: 22px;
@@ -1072,23 +1075,25 @@ section {
 .qr-box {
     opacity: 0;
     pointer-events: none;
-    transition: 0.3s;
-
-    background:white;
+    transform: translateY(-10px);
+    transition: opacity 0.3s, transform 0.3s;
+    background: white;
     padding: 10px;
+    margin-left: 100px;
     border-radius: 15px;
+    box-shadow: 0 0 15px rgba(50, 255, 105, 0.6);
 }
 
-/*#qr-toggle:checked ~ .qr-box {*/
-/*    opacity: 1;*/
-/*    transform: translateY(0);*/
-/*    pointer-events: auto;*/
-/*}*/
+.qr-box.qr-open {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+}
 
-/*.qr-box img {*/
-/*    width: 150px;*/
-/*}*/
-
+.qr-box img {
+    width: 150px;
+    display: block;
+}
 
 
 
