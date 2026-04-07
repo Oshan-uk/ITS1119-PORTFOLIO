@@ -201,13 +201,12 @@ body {
         box-shadow: 40vmin 0 5.196265905749415vmin currentColor;
     }
 
-    /*Responsive Header*/
 
     .menu-toggle {
-        display: none; /* show on mobile */
+        display: none;
         font-size: 28px;
         cursor: pointer;
-        z-index: 1001; /* above nav links */
+        z-index: 1001;
         position: absolute;
         top: 15px;
         right: 20px;
