@@ -750,6 +750,7 @@ body {
 
     .education-card {
         background: #06041C;
+        opacity: 0.9;
         padding: 25px;
         width: 300px;
         border-radius: 20px;
@@ -762,9 +763,19 @@ body {
     .education-card:hover {
         border: 2px solid red;
         transform: translateY(-10px) scale(1.05);
-        box-shadow: 0 10px 25px rgba(50, 255, 105, 0.8),
-        0 -10px 25px rgba(50, 255, 105, 0.8),
+        box-shadow: 0 10px 25px rgba(6, 239, 246, 0.8),
+        0 -10px 25px rgba(6, 239, 246, 0.8),
         0 0 35px rgba(6, 239, 246, 0.8);
+        animation: bgcolor 2s linear infinite alternate;
+    }
+    @keyframes bgcolor {
+        from{
+            background-position: top;
+        }
+        to{
+            background-position: top;
+            background-color: black;
+        }
     }
 
     .degree {
