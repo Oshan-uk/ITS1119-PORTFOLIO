@@ -1215,6 +1215,12 @@ body {
     }
 
 
+
+
+
+
+
+    /*Responsive Code*/
     @media (max-width: 768px) {
         nav {
             border-radius: 20px;
@@ -1956,7 +1962,1177 @@ body {
     }
 }
 
+@media (max-width: 320px) {
+    nav {
+        padding: 8px 10px;
+    }
 
+    .menu-toggle {
+        display: block;
+        position: static;
+    }
+
+    .navigations {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        gap: 0;
+        text-align: center;
+        background: rgba(0, 0, 0, 0.95);
+        position: absolute;
+        top: 50px;
+        left: 0;
+        padding: 8px 0;
+        border-radius: 20px;
+        border-top: 1px solid cyan;
+    }
+
+    .navigations.open {
+        display: flex;
+    }
+
+    .navigations a {
+        padding: 10px 0;
+        font-size: 13px;
+        border-bottom: 1px solid rgba(0, 255, 255, 0.1);
+    }
+
+    .background {
+        position: fixed;
+        width: 100vw;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .hero-section {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        padding: 70px 10px 30px;
+        text-align: center;
+        min-height: 100svh;
+    }
+
+    .hero-section .hero-image {
+        width: 160px;
+        height: 160px;
+        min-width: unset;
+        max-width: 160px;
+        margin-top: 0;
+    }
+
+    .hero-content {
+        margin-top: 0;
+        width: 100%;
+    }
+
+    .hero-content h1 {
+        font-size: 22px;
+        margin-bottom: 8px;
+    }
+
+    .hero-content h3 {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .hero-content p {
+        font-size: 13px;
+        max-width: 100%;
+        line-height: 1.5;
+        margin-bottom: 16px;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .hero-content span {
+        max-width: 100%;
+        font-size: 12px;
+    }
+
+    .hero-content h3 span {
+        display: block;
+    }
+
+    .hero-content button {
+        width: 100px;
+        height: 26px;
+        font-size: 12px;
+    }
+
+    .about {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 50px 10px 30px;
+    }
+
+    .about-left {
+        align-items: center;
+        width: 100%;
+    }
+
+    .about-topic {
+        font-size: 26px;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+
+    .about-content {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        font-size: 12px;
+        line-height: 1.7;
+        padding: 14px;
+        margin-bottom: 16px;
+    }
+
+    .about-image {
+        display: flex;
+        justify-content: center;
+    }
+
+    .about-image img {
+        width: 150px;
+        height: 200px;
+        margin-right: 0;
+        margin-top: 0;
+    }
+
+    #skills {
+        height: auto;
+        padding: 50px 10px 30px;
+        gap: 20px;
+    }
+
+    .technical-skills-title,
+    .soft-skills-title {
+        font-size: 22px;
+        margin-top: 0;
+    }
+
+    .skills-animation {
+        flex-wrap: wrap;
+        gap: 14px;
+        justify-content: center;
+    }
+
+    .skill-logo img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .soft-skill {
+        font-size: 11px;
+        padding: 6px 10px;
+    }
+
+    #projects {
+        height: auto;
+        padding: 50px 10px 30px;
+    }
+
+    .projects-title {
+        font-size: 24px;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    .projects-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .project-card {
+        width: 100%;
+        max-width: 280px;
+        margin-top: 0;
+    }
+
+    .project-name {
+        font-size: 15px;
+    }
+
+    .project-description {
+        font-size: 12px;
+    }
+
+    .projects-btn {
+        font-size: 13px;
+        padding: 8px 16px;
+    }
+
+    #education {
+        padding: 50px 10px 30px;
+    }
+
+    .education-title {
+        font-size: 26px;
+        margin-top: 0;
+        margin-bottom: 16px;
+    }
+
+    .education-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 14px;
+    }
+
+    .education-card {
+        width: 100%;
+        max-width: 280px;
+        padding: 16px;
+    }
+
+    .degree {
+        font-size: 14px;
+    }
+
+    .institution {
+        font-size: 12px;
+    }
+
+    .year {
+        font-size: 11px;
+    }
+
+    .description {
+        font-size: 11px;
+    }
+
+    #exercises {
+        height: auto;
+        padding: 50px 10px 30px;
+    }
+
+    .exercises-title {
+        font-size: 24px;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    .exercises-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .exercises-card {
+        width: 100%;
+        max-width: 280px;
+        margin-top: 0;
+    }
+
+    .exercises-name {
+        font-size: 15px;
+    }
+
+    .exercises-description {
+        font-size: 12px;
+    }
+
+    .exercises-btn {
+        font-size: 13px;
+        padding: 8px 16px;
+    }
+
+    #gallery {
+        height: auto;
+        padding-bottom: 30px;
+    }
+
+    .gallery-title {
+        font-size: 26px;
+        margin-top: 0;
+        padding-top: 50px;
+    }
+
+    .gallery-wrap {
+        flex-direction: row;
+        height: 220px;
+        gap: 4px;
+    }
+
+    .item {
+        flex: 1;
+        height: 100%;
+        border-radius: 8px;
+    }
+
+    .item:hover {
+        flex: 4;
+    }
+
+    #contact {
+        height: auto;
+        padding: 50px 10px 30px;
+    }
+
+    .contact-title {
+        font-size: 26px;
+        margin-top: 0;
+    }
+
+    .fields form {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .info p {
+        font-size: 13px;
+        padding-left: 0;
+    }
+
+    .info {
+        margin-top: 30px;
+    }
+
+    .footer {
+        flex-direction: column;
+        height: auto;
+        padding: 16px 10px;
+        gap: 12px;
+        text-align: center;
+        margin-top: 16px;
+    }
+
+    .footer-left {
+        padding-left: 0;
+        font-size: 12px;
+        align-items: center;
+    }
+
+    .footer-center {
+        position: static;
+        transform: none;
+        margin-top: 0;
+    }
+
+    .footer-center p {
+        font-size: 12px;
+    }
+
+    .footer-right {
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .footer-right div {
+        width: 34px;
+        height: 34px;
+    }
+
+    .footer-right a img {
+        width: 22px;
+    }
+
+    .qr-container {
+        bottom: 12px;
+        left: 12px;
+    }
+
+    .qr-box {
+        width: 100px;
+        margin-left: 50px;
+    }
+
+    .qr-box img {
+        width: 80px;
+    }
+
+    .qr-btn {
+        width: 38px;
+        height: 38px;
+    }
+
+    .qr-btn i {
+        font-size: 16px;
+    }
+}
+
+
+@media (min-width: 321px) and (max-width: 375px) {
+    nav {
+        padding: 9px 12px;
+    }
+
+    .menu-toggle {
+        display: block;
+        position: static;
+    }
+
+    .navigations {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        gap: 0;
+        text-align: center;
+        background: rgba(0, 0, 0, 0.95);
+        position: absolute;
+        top: 52px;
+        left: 0;
+        padding: 9px 0;
+        border-radius: 20px;
+        border-top: 1px solid cyan;
+    }
+
+    .navigations.open {
+        display: flex;
+    }
+
+    .navigations a {
+        padding: 11px 0;
+        font-size: 14px;
+        border-bottom: 1px solid rgba(0, 255, 255, 0.1);
+    }
+
+    .background {
+        position: fixed;
+        width: 100vw;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .hero-section {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 80px 12px 34px;
+        text-align: center;
+        min-height: 100svh;
+    }
+
+    .hero-section .hero-image {
+        width: 180px;
+        height: 180px;
+        min-width: unset;
+        max-width: 180px;
+        margin-top: 0;
+    }
+
+    .hero-content {
+        margin-top: 0;
+        width: 100%;
+    }
+
+    .hero-content h1 {
+        font-size: 26px;
+        margin-bottom: 9px;
+    }
+
+    .hero-content h3 {
+        font-size: 15px;
+        margin-bottom: 12px;
+    }
+
+    .hero-content p {
+        font-size: 14px;
+        max-width: 100%;
+        line-height: 1.5;
+        margin-bottom: 18px;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .hero-content span {
+        max-width: 100%;
+        font-size: 13px;
+    }
+
+    .hero-content h3 span {
+        display: block;
+    }
+
+    .hero-content button {
+        width: 105px;
+        height: 27px;
+        font-size: 13px;
+    }
+
+    .about {
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+        padding: 54px 12px 34px;
+    }
+
+    .about-left {
+        align-items: center;
+        width: 100%;
+    }
+
+    .about-topic {
+        font-size: 28px;
+        padding-bottom: 12px;
+        text-align: center;
+    }
+
+    .about-content {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        font-size: 13px;
+        line-height: 1.75;
+        padding: 16px;
+        margin-bottom: 18px;
+    }
+
+    .about-image {
+        display: flex;
+        justify-content: center;
+    }
+
+    .about-image img {
+        width: 170px;
+        height: 220px;
+        margin-right: 0;
+        margin-top: 0;
+    }
+
+    #skills {
+        height: auto;
+        padding: 54px 12px 34px;
+        gap: 24px;
+    }
+
+    .technical-skills-title,
+    .soft-skills-title {
+        font-size: 24px;
+        margin-top: 0;
+    }
+
+    .skills-animation {
+        flex-wrap: wrap;
+        gap: 16px;
+        justify-content: center;
+    }
+
+    .skill-logo img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .soft-skill {
+        font-size: 12px;
+        padding: 7px 12px;
+    }
+
+    #projects {
+        height: auto;
+        padding: 54px 12px 34px;
+    }
+
+    .projects-title {
+        font-size: 26px;
+        margin-top: 0;
+        margin-bottom: 24px;
+    }
+
+    .projects-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .project-card {
+        width: 100%;
+        max-width: 300px;
+        margin-top: 0;
+    }
+
+    .project-name {
+        font-size: 16px;
+    }
+
+    .project-description {
+        font-size: 13px;
+    }
+
+    .projects-btn {
+        font-size: 14px;
+        padding: 9px 18px;
+    }
+
+    #education {
+        padding: 54px 12px 34px;
+    }
+
+    .education-title {
+        font-size: 28px;
+        margin-top: 0;
+        margin-bottom: 18px;
+    }
+
+    .education-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .education-card {
+        width: 100%;
+        max-width: 300px;
+        padding: 18px;
+    }
+
+    .degree {
+        font-size: 15px;
+    }
+
+    .institution {
+        font-size: 13px;
+    }
+
+    .year {
+        font-size: 12px;
+    }
+
+    .description {
+        font-size: 12px;
+    }
+
+    #exercises {
+        height: auto;
+        padding: 54px 12px 34px;
+    }
+
+    .exercises-title {
+        font-size: 26px;
+        margin-top: 0;
+        margin-bottom: 24px;
+    }
+
+    .exercises-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .exercises-card {
+        width: 100%;
+        max-width: 300px;
+        margin-top: 0;
+    }
+
+    .exercises-name {
+        font-size: 16px;
+    }
+
+    .exercises-description {
+        font-size: 13px;
+    }
+
+    .exercises-btn {
+        font-size: 14px;
+        padding: 9px 18px;
+    }
+
+    #gallery {
+        height: auto;
+        padding-bottom: 34px;
+    }
+
+    .gallery-title {
+        font-size: 28px;
+        margin-top: 0;
+        padding-top: 54px;
+    }
+
+    .gallery-wrap {
+        flex-direction: row;
+        height: 240px;
+        gap: 5px;
+    }
+
+    .item {
+        flex: 1;
+        height: 100%;
+        border-radius: 9px;
+    }
+
+    .item:hover {
+        flex: 4;
+    }
+
+    #contact {
+        height: auto;
+        padding: 54px 12px 34px;
+    }
+
+    .contact-title {
+        font-size: 28px;
+        margin-top: 0;
+    }
+
+    .fields form {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .info p {
+        font-size: 14px;
+        padding-left: 0;
+    }
+
+    .info {
+        margin-top: 34px;
+    }
+
+    .footer {
+        flex-direction: column;
+        height: auto;
+        padding: 18px 12px;
+        gap: 14px;
+        text-align: center;
+        margin-top: 18px;
+    }
+
+    .footer-left {
+        padding-left: 0;
+        font-size: 13px;
+        align-items: center;
+    }
+
+    .footer-center {
+        position: static;
+        transform: none;
+        margin-top: 0;
+    }
+
+    .footer-center p {
+        font-size: 13px;
+    }
+
+    .footer-right {
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .footer-right div {
+        width: 36px;
+        height: 36px;
+    }
+
+    .footer-right a img {
+        width: 24px;
+    }
+
+    .qr-container {
+        bottom: 14px;
+        left: 14px;
+    }
+
+    .qr-box {
+        width: 110px;
+        margin-left: 60px;
+    }
+
+    .qr-box img {
+        width: 90px;
+    }
+
+    .qr-btn {
+        width: 42px;
+        height: 42px;
+    }
+
+    .qr-btn i {
+        font-size: 18px;
+    }
+}
+
+
+@media (min-width: 376px) and (max-width: 425px) {
+    nav {
+        padding: 10px 14px;
+    }
+
+    .menu-toggle {
+        display: block;
+        position: static;
+    }
+
+    .navigations {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        gap: 0;
+        text-align: center;
+        background: rgba(0, 0, 0, 0.95);
+        position: absolute;
+        top: 54px;
+        left: 0;
+        padding: 10px 0;
+        border-radius: 20px;
+        border-top: 1px solid cyan;
+    }
+
+    .navigations.open {
+        display: flex;
+    }
+
+    .navigations a {
+        padding: 12px 0;
+        font-size: 15px;
+        border-bottom: 1px solid rgba(0, 255, 255, 0.1);
+    }
+
+    .background {
+        position: fixed;
+        width: 100vw;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .hero-section {
+        flex-direction: column;
+        align-items: center;
+        gap: 22px;
+        padding: 85px 14px 38px;
+        text-align: center;
+        min-height: 100svh;
+    }
+
+    .hero-section .hero-image {
+        width: 200px;
+        height: 200px;
+        min-width: unset;
+        max-width: 200px;
+        margin-top: 0;
+    }
+
+    .hero-content {
+        margin-top: 0;
+        width: 100%;
+    }
+
+    .hero-content h1 {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+
+    .hero-content h3 {
+        font-size: 16px;
+        margin-bottom: 13px;
+    }
+
+    .hero-content p {
+        font-size: 15px;
+        max-width: 100%;
+        line-height: 1.5;
+        margin-bottom: 19px;
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+
+    .hero-content span {
+        max-width: 100%;
+        font-size: 14px;
+    }
+
+    .hero-content h3 span {
+        display: block;
+    }
+
+    .hero-content button {
+        width: 108px;
+        height: 28px;
+        font-size: 13px;
+    }
+
+    .about {
+        flex-direction: column;
+        align-items: center;
+        gap: 26px;
+        padding: 57px 14px 38px;
+    }
+
+    .about-left {
+        align-items: center;
+        width: 100%;
+    }
+
+    .about-topic {
+        font-size: 30px;
+        padding-bottom: 14px;
+        text-align: center;
+    }
+
+    .about-content {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        font-size: 14px;
+        line-height: 1.8;
+        padding: 18px;
+        margin-bottom: 19px;
+    }
+
+    .about-image {
+        display: flex;
+        justify-content: center;
+    }
+
+    .about-image img {
+        width: 185px;
+        height: 240px;
+        margin-right: 0;
+        margin-top: 0;
+    }
+
+    #skills {
+        height: auto;
+        padding: 57px 14px 38px;
+        gap: 26px;
+    }
+
+    .technical-skills-title,
+    .soft-skills-title {
+        font-size: 26px;
+        margin-top: 0;
+    }
+
+    .skills-animation {
+        flex-wrap: wrap;
+        gap: 18px;
+        justify-content: center;
+    }
+
+    .skill-logo img {
+        width: 55px;
+        height: 55px;
+    }
+
+    .soft-skill {
+        font-size: 13px;
+        padding: 7px 13px;
+    }
+
+    #projects {
+        height: auto;
+        padding: 57px 14px 38px;
+    }
+
+    .projects-title {
+        font-size: 28px;
+        margin-top: 0;
+        margin-bottom: 26px;
+    }
+
+    .projects-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 22px;
+    }
+
+    .project-card {
+        width: 100%;
+        max-width: 310px;
+        margin-top: 0;
+    }
+
+    .project-name {
+        font-size: 17px;
+    }
+
+    .project-description {
+        font-size: 14px;
+    }
+
+    .projects-btn {
+        font-size: 15px;
+        padding: 9px 20px;
+    }
+
+    #education {
+        padding: 57px 14px 38px;
+    }
+
+    .education-title {
+        font-size: 30px;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    .education-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+    }
+
+    .education-card {
+        width: 100%;
+        max-width: 310px;
+        padding: 20px;
+    }
+
+    .degree {
+        font-size: 16px;
+    }
+
+    .institution {
+        font-size: 14px;
+    }
+
+    .year {
+        font-size: 13px;
+    }
+
+    .description {
+        font-size: 13px;
+    }
+
+    #exercises {
+        height: auto;
+        padding: 57px 14px 38px;
+    }
+
+    .exercises-title {
+        font-size: 28px;
+        margin-top: 0;
+        margin-bottom: 26px;
+    }
+
+    .exercises-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 22px;
+    }
+
+    .exercises-card {
+        width: 100%;
+        max-width: 310px;
+        margin-top: 0;
+    }
+
+    .exercises-name {
+        font-size: 17px;
+    }
+
+    .exercises-description {
+        font-size: 14px;
+    }
+
+    .exercises-btn {
+        font-size: 15px;
+        padding: 9px 20px;
+    }
+
+    #gallery {
+        height: auto;
+        padding-bottom: 38px;
+    }
+
+    .gallery-title {
+        font-size: 30px;
+        margin-top: 0;
+        padding-top: 57px;
+    }
+
+    .gallery-wrap {
+        flex-direction: row;
+        height: 260px;
+        gap: 5px;
+    }
+
+    .item {
+        flex: 1;
+        height: 100%;
+        border-radius: 10px;
+    }
+
+    .item:hover {
+        flex: 4;
+    }
+
+    #contact {
+        height: auto;
+        padding: 57px 14px 38px;
+    }
+
+    .contact-title {
+        font-size: 30px;
+        margin-top: 0;
+    }
+
+    .fields form {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .info p {
+        font-size: 15px;
+        padding-left: 0;
+    }
+
+    .info {
+        margin-top: 38px;
+    }
+
+    .footer {
+        flex-direction: column;
+        height: auto;
+        padding: 20px 14px;
+        gap: 14px;
+        text-align: center;
+        margin-top: 19px;
+    }
+
+    .footer-left {
+        padding-left: 0;
+        font-size: 13px;
+        align-items: center;
+    }
+
+    .footer-center {
+        position: static;
+        transform: none;
+        margin-top: 0;
+    }
+
+    .footer-center p {
+        font-size: 13px;
+    }
+
+    .footer-right {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .footer-right div {
+        width: 38px;
+        height: 38px;
+    }
+
+    .footer-right a img {
+        width: 26px;
+    }
+
+    .qr-container {
+        bottom: 16px;
+        left: 16px;
+    }
+
+    .qr-box {
+        width: 120px;
+        margin-left: 70px;
+    }
+
+    .qr-box img {
+        width: 100px;
+    }
+
+    .qr-btn {
+        width: 45px;
+        height: 45px;
+    }
+
+    .qr-btn i {
+        font-size: 20px;
+    }
+}
 
 
 
