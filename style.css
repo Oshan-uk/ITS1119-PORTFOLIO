@@ -11,7 +11,7 @@ html{
 body {
     font-family: "Times New Roman", sans-serif;
     cursor: url('https://cdn.cursors-4u.net/css-previews/rainbow-pinwheel-pointer-9c59d375-css.webp') 5 1, auto !important;
-
+}
     button {
         cursor: pointer;
     }
@@ -1318,7 +1318,7 @@ body {
         }
 
         span {
-            text-align: center; /* centers the whole line */
+            text-align: center;
         }
 
 
@@ -1486,13 +1486,13 @@ body {
 
         .gallery-wrap {
             display: flex;
-            flex-direction: row; /* side by side like |||||||| */
-            height: 300px; /* fixed height for the bars */
+            flex-direction: row;
+            height: 300px;
             gap: 6px;
         }
 
         .item {
-            flex: 1; /* equal width bars */
+            flex: 1;
             height: 100%;
             border-radius: 10px;
             transition: flex 0.5s ease, transform 0.4s ease;
@@ -1502,7 +1502,7 @@ body {
         }
 
         .item:hover {
-            flex: 4; /* expands on hover */
+            flex: 4;
             transform: scale(1.02);
             background-position: center;
         }
@@ -1556,7 +1556,6 @@ body {
     }
 
 
-    /* Tablet & iPad (769px – 1024px) */
     @media (min-width: 769px) and (max-width: 1024px) {
 
         nav {
@@ -1960,7 +1959,7 @@ body {
             width: 28px;
         }
     }
-}
+
 
 @media (max-width: 320px) {
     nav {
@@ -2048,6 +2047,9 @@ body {
     .hero-content span {
         max-width: 100%;
         font-size: 12px;
+        border-right: none;
+        animation: none;
+
     }
 
     .hero-content h3 span {
@@ -2330,7 +2332,8 @@ body {
 
     .qr-container {
         bottom: 12px;
-        left: 12px;
+        /*left: 12px;*/
+        left: -50px;
     }
 
     .qr-box {
@@ -2439,6 +2442,8 @@ body {
     .hero-content span {
         max-width: 100%;
         font-size: 13px;
+        border-right: none;
+        animation: none;
     }
 
     .hero-content h3 span {
@@ -2721,7 +2726,8 @@ body {
 
     .qr-container {
         bottom: 14px;
-        left: 14px;
+        /*left: 14px;*/
+        left: -60px;
     }
 
     .qr-box {
@@ -2784,6 +2790,7 @@ body {
         width: 100vw;
         height: 100%;
         overflow: hidden;
+        animation: running;
     }
 
     .hero-section {
@@ -2830,6 +2837,8 @@ body {
     .hero-content span {
         max-width: 100%;
         font-size: 14px;
+        border-right: none;
+        animation: none;
     }
 
     .hero-content h3 span {
@@ -3134,7 +3143,15 @@ body {
     }
 }
 
+@media (min-width: 426px) and (max-width: 767px) {
+    .hero-content span {
+        max-width: 100%;
+        font-size: 14px;
+        border-right: none;
+        animation: none;
+    }
 
+}
 
 
 
