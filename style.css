@@ -1315,6 +1315,28 @@ body {
         .hero-content span {
             max-width: 100%;
             font-size: 15px;
+            border-right: none;
+            animation: none;
+
+        }
+
+        .hero-content span {
+            max-width: 100%;
+            font-size: 15px;
+            border-right: none;
+            animation: color 3s infinite linear alternate;
+
+        }
+
+        @keyframes color {
+            from{
+              left: 0;
+                color: #61f80a;
+            }
+            to{
+               right: 0;
+                color: #150033;
+            }
         }
 
         span {
@@ -1556,7 +1578,7 @@ body {
     }
 
 
-    @media (min-width: 769px) and (max-width: 1024px) {
+    @media (min-width: 769px) and (max-width: 1044px) {
 
         nav {
             padding: 8px 16px;
@@ -1628,12 +1650,25 @@ body {
         }
 
         .hero-content span {
-            font-size: 14px;
+            font-size: 20px;
             max-width: 80%;
+            border-right: none;
+            animation: color2 1s infinite linear alternate;
         }
 
         .hero-content h3 span {
-            display: inline;
+            display: block;
+        }
+
+        @keyframes color2 {
+            from{
+                left: 0;
+                color: #61f80a;
+            }
+            to{
+                right: 0;
+                color: transparent;
+            }
         }
 
         .hero-content button {
@@ -3152,7 +3187,6 @@ body {
     }
 
 }
-
 
 
 
