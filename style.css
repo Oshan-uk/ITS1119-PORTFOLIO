@@ -2083,8 +2083,18 @@ body {
         max-width: 100%;
         font-size: 12px;
         border-right: none;
-        animation: none;
+        animation: color2 1s linear infinite alternate ;
 
+    }
+    @keyframes color2 {
+        from{
+            left: 0;
+            color: #61f80a;
+        }
+        to{
+            right: 0;
+            color: transparent;
+        }
     }
 
     .hero-content h3 span {
@@ -2478,7 +2488,18 @@ body {
         max-width: 100%;
         font-size: 13px;
         border-right: none;
-        animation: none;
+        animation: color2 1s infinite alternate linear;
+    }
+
+    @keyframes color2 {
+        from{
+            left: 0;
+            color: #61f80a;
+        }
+        to{
+            right: 0;
+            color: transparent;
+        }
     }
 
     .hero-content h3 span {
@@ -2873,9 +2894,19 @@ body {
         max-width: 100%;
         font-size: 14px;
         border-right: none;
-        animation: none;
+        animation: color2 1s infinite alternate linear;
     }
 
+    @keyframes color2 {
+        from{
+            left: 0;
+            color: #61f80a;
+        }
+        to{
+            right: 0;
+            color: transparent;
+        }
+    }
     .hero-content h3 span {
         display: block;
     }
