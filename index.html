@@ -24,7 +24,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assest/lib/fontawesome/fontawesome-free-7.2.0-web/css/all.min.css">
 
-
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>emailjs.init("v9n8fWedCKzmaLkNU");</script>
 </head>
 
 <body >
@@ -324,6 +325,7 @@
 
 
     <!-- Contact Section -->
+    <!-- Contact Section -->
     <section id="contact">
 
         <h3 class="contact-title">Contact Me</h3>
@@ -331,22 +333,21 @@
         <div class="contact-container">
 
             <div class="fields">
-                <form>
-                    <input type="text" placeholder="Full Name" required>
-                    <input type="email" placeholder="Email" required>
-                    <textarea placeholder="Message" rows="5" required></textarea>
-
-                    <button type="submit">Send Message</button>
+                <form id="contact-form">
+                    <input type="text" name="name" placeholder="Full Name" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <textarea name="message" placeholder="Message" rows="5" required></textarea>
+                    <button type="submit" id="send-btn">Send Message</button>
                 </form>
+                <p id="form-status" style="margin-top: 10px; font-weight: bold;"></p>
             </div>
 
             <div class="info">
                 <p><strong>Phone:</strong> +94 75 966 8377</p>
                 <p><strong>Email:</strong> oshanudeesha2004@gmail.com</p>
                 <p><strong>LinkedIn:</strong> https://www.linkedin.com/in/oshan-udeesha-a380b03a8/</p>
-                <p><strong>GitHub:</strong>https://github.com/Oshan-uk</p>
+                <p><strong>GitHub:</strong> https://github.com/Oshan-uk</p>
             </div>
-
 
         </div>
     </section>
